@@ -1,0 +1,370 @@
+{
+  "config": {
+    "tone_amplitude": 0.1,
+    "tx_rate": 500000.0,
+    "rx_rate": 500000.0,
+    "tx_frequency": 2450000000.0,
+    "tx_gain": 10.0,
+    "tx_antenna": "TX/RX",
+    "tx_subdev": "A:0",
+    "rx_subdev": "A:A A:B",
+    "rx_frequencies": [
+      2449999999.9999976,
+      2449999999.9999976
+    ],
+    "rx_lo_locked": [
+      "LO: locked",
+      "LO: locked"
+    ]
+  },
+  "measurements": [
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -71.40914916992188,
+          "peak_hz": 29663.0859375,
+          "peak_dbfs": -99.04746176201036,
+          "wide_peak_hz": 29663.0859375,
+          "wide_peak_dbfs": -99.04746176201036,
+          "band_floor_dbfs": -105.0940215351558
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.11123657226562,
+          "peak_hz": 26123.046875,
+          "peak_dbfs": -105.09863073003253,
+          "wide_peak_hz": -16235.3515625,
+          "wide_peak_dbfs": -104.28132521035698,
+          "band_floor_dbfs": -108.68127640105202
+        }
+      ]
+    },
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 1,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -71.56266784667969,
+          "peak_hz": 25024.4140625,
+          "peak_dbfs": -100.90074472689298,
+          "wide_peak_hz": 103881.8359375,
+          "wide_peak_dbfs": -100.26163524823966,
+          "band_floor_dbfs": -104.92654088456447
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.03893280029297,
+          "peak_hz": 31738.28125,
+          "peak_dbfs": -105.33905503568928,
+          "wide_peak_hz": 15747.0703125,
+          "wide_peak_dbfs": -104.42655914924347,
+          "band_floor_dbfs": -108.74897366774393
+        }
+      ]
+    },
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -72.34461975097656,
+          "peak_hz": 29663.0859375,
+          "peak_dbfs": -100.43421418286805,
+          "wide_peak_hz": 16601.5625,
+          "wide_peak_dbfs": -100.25789585433486,
+          "band_floor_dbfs": -106.23740673899363
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.06716918945312,
+          "peak_hz": 25634.765625,
+          "peak_dbfs": -105.16437907277157,
+          "wide_peak_hz": 16723.6328125,
+          "wide_peak_dbfs": -103.9927940963394,
+          "band_floor_dbfs": -108.74081107108839
+        }
+      ]
+    },
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.29916381835938,
+          "peak_hz": 28442.3828125,
+          "peak_dbfs": -105.99033182549144,
+          "wide_peak_hz": 15258.7890625,
+          "wide_peak_dbfs": -104.63133697161864,
+          "band_floor_dbfs": -109.06633973376215
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.25831604003906,
+          "peak_hz": 30395.5078125,
+          "peak_dbfs": -106.21435101333975,
+          "wide_peak_hz": 15625.0,
+          "wide_peak_dbfs": -105.03462608662362,
+          "band_floor_dbfs": -108.87165967944212
+        }
+      ]
+    },
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 1,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.21743774414062,
+          "peak_hz": 25390.625,
+          "peak_dbfs": -105.67044253888906,
+          "wide_peak_hz": 15014.6484375,
+          "wide_peak_dbfs": -104.46361144973349,
+          "band_floor_dbfs": -109.00192681742908
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.18814086914062,
+          "peak_hz": 26489.2578125,
+          "peak_dbfs": -106.21197447530358,
+          "wide_peak_hz": 16235.3515625,
+          "wide_peak_dbfs": -104.71746988762078,
+          "band_floor_dbfs": -108.73545960838584
+        }
+      ]
+    },
+    {
+      "rx_gain": 40,
+      "actual_gains": [
+        40.0,
+        40.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.26050567626953,
+          "peak_hz": 36010.7421875,
+          "peak_dbfs": -105.78953574332542,
+          "wide_peak_hz": -15380.859375,
+          "wide_peak_dbfs": -104.57817852718664,
+          "band_floor_dbfs": -108.89529502616816
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -74.05513000488281,
+          "peak_hz": 27709.9609375,
+          "peak_dbfs": -105.95652782281829,
+          "wide_peak_hz": 21728.515625,
+          "wide_peak_dbfs": -105.06045341015864,
+          "band_floor_dbfs": -108.71211114683757
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -49.95880126953125,
+          "peak_hz": 25024.4140625,
+          "peak_dbfs": -83.15450644292952,
+          "wide_peak_hz": 24902.34375,
+          "wide_peak_dbfs": -82.71349636743848,
+          "band_floor_dbfs": -89.1421522066188
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -59.70149230957031,
+          "peak_hz": 25268.5546875,
+          "peak_dbfs": -90.92830638428407,
+          "wide_peak_hz": 15136.71875,
+          "wide_peak_dbfs": -89.92472247418655,
+          "band_floor_dbfs": -94.16351004168573
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 1,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -55.26792907714844,
+          "peak_hz": 31860.3515625,
+          "peak_dbfs": -83.21653201302496,
+          "wide_peak_hz": 19409.1796875,
+          "wide_peak_dbfs": -82.95461684410006,
+          "band_floor_dbfs": -88.87859273260715
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -59.7138557434082,
+          "peak_hz": 27099.609375,
+          "peak_dbfs": -90.68407842730194,
+          "wide_peak_hz": 17333.984375,
+          "wide_peak_dbfs": -89.76204215232701,
+          "band_floor_dbfs": -94.22757320950402
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "RX2",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -54.93050003051758,
+          "peak_hz": 30273.4375,
+          "peak_dbfs": -82.93152798298237,
+          "wide_peak_hz": 17456.0546875,
+          "wide_peak_dbfs": -82.869234238935,
+          "band_floor_dbfs": -88.12804248400423
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -59.56072235107422,
+          "peak_hz": 31860.3515625,
+          "peak_dbfs": -89.60465903333598,
+          "wide_peak_hz": 31860.3515625,
+          "wide_peak_dbfs": -89.60465903333598,
+          "band_floor_dbfs": -93.96639166120936
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -60.189117431640625,
+          "peak_hz": 30273.4375,
+          "peak_dbfs": -91.58092372291074,
+          "wide_peak_hz": 17089.84375,
+          "wide_peak_dbfs": -89.84353961287012,
+          "band_floor_dbfs": -94.68378240984116
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -60.204315185546875,
+          "peak_hz": 31860.3515625,
+          "peak_dbfs": -92.40751004336192,
+          "wide_peak_hz": 20996.09375,
+          "wide_peak_dbfs": -91.17134957447503,
+          "band_floor_dbfs": -94.89685338087709
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 1,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -60.17151641845703,
+          "peak_hz": 25268.5546875,
+          "peak_dbfs": -91.29645175581376,
+          "wide_peak_hz": -15747.0703125,
+          "wide_peak_dbfs": -89.8010081391673,
+          "band_floor_dbfs": -94.81791915408543
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -60.235843658447266,
+          "peak_hz": 25756.8359375,
+          "peak_dbfs": -92.03213619990805,
+          "wide_peak_hz": -17089.84375,
+          "wide_peak_dbfs": -90.8673552585813,
+          "band_floor_dbfs": -94.8354809650347
+        }
+      ]
+    },
+    {
+      "rx_gain": 60,
+      "actual_gains": [
+        60.0,
+        60.0
+      ],
+      "antenna": "TX/RX",
+      "tx_enabled": 0,
+      "channels": [
+        {
+          "samples": 131072,
+          "rms_dbfs": -60.1358642578125,
+          "peak_hz": 25634.765625,
+          "peak_dbfs": -91.3915498306967,
+          "wide_peak_hz": -18188.4765625,
+          "wide_peak_dbfs": -89.57861275603267,
+          "band_floor_dbfs": -94.60759794288221
+        },
+        {
+          "samples": 131072,
+          "rms_dbfs": -59.94501495361328,
+          "peak_hz": 34545.8984375,
+          "peak_dbfs": -91.94034446050489,
+          "wide_peak_hz": 15991.2109375,
+          "wide_peak_dbfs": -90.85084170092802,
+          "band_floor_dbfs": -94.66191704222524
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "blocks": [
+    "0/DDC#0",
+    "0/DDC#1",
+    "0/DUC#0",
+    "0/DUC#1",
+    "0/Radio#0",
+    "0/Radio#1",
+    "0/Replay#0"
+  ],
+  "static_connections": [
+    "0/SEP#0:0==>0/DUC#0:0",
+    "0/DUC#0:0==>0/Radio#0:0",
+    "0/Radio#0:0==>0/DDC#0:0",
+    "0/DDC#0:0==>0/SEP#0:0",
+    "0/SEP#1:0==>0/DUC#1:0",
+    "0/DUC#1:0==>0/Radio#1:0",
+    "0/Radio#1:0==>0/DDC#1:0",
+    "0/DDC#1:0==>0/SEP#1:0",
+    "0/SEP#2:0==>0/Replay#0:0",
+    "0/Replay#0:0==>0/SEP#2:0",
+    "0/SEP#3:0==>0/Replay#0:1",
+    "0/Replay#0:1==>0/SEP#3:0"
+  ],
+  "details": {
+    "0/DDC#0": {
+      "property_ids": [
+        "decim",
+        "freq"
+      ],
+      "get_tick_rate": 0.0,
+      "get_input_rate": 1.0,
+      "get_output_rate": 1.0
+    },
+    "0/DDC#1": {
+      "property_ids": [
+        "decim",
+        "freq"
+      ],
+      "get_tick_rate": 0.0,
+      "get_input_rate": 1.0,
+      "get_output_rate": 1.0
+    },
+    "0/DUC#0": {
+      "property_ids": [
+        "interp",
+        "freq"
+      ],
+      "get_tick_rate": 0.0,
+      "get_input_rate": 1.0,
+      "get_output_rate": 1.0
+    },
+    "0/DUC#1": {
+      "property_ids": [
+        "interp",
+        "freq"
+      ],
+      "get_tick_rate": 0.0,
+      "get_input_rate": 1.0,
+      "get_output_rate": 1.0
+    },
+    "0/Radio#0": {
+      "property_ids": [
+        "spp",
+        "spur_dodging",
+        "spur_dodging_threshold",
+        "highband_spur_reduction"
+      ],
+      "get_tick_rate": 200000000.0,
+      "get_rate": 200000000.0
+    },
+    "0/Radio#1": {
+      "property_ids": [
+        "spp",
+        "spur_dodging",
+        "spur_dodging_threshold",
+        "highband_spur_reduction"
+      ],
+      "get_tick_rate": 200000000.0,
+      "get_rate": 200000000.0
+    },
+    "0/Replay#0": {
+      "property_ids": [
+        "record_offset",
+        "record_size",
+        "record_offset",
+        "record_size",
+        "play_offset",
+        "play_size",
+        "payload_size",
+        "play_offset",
+        "play_size",
+        "payload_size"
+      ],
+      "get_tick_rate": 0.0
+    }
+  }
+}

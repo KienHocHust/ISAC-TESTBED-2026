@@ -1,0 +1,18 @@
+{
+  "/data/network/sfp0.network~": "[Match]\nName=sfp0\n\n[Network]\nAddress=192.168.10.3/24\n\n[Link]\nMTUBytes=9000\nTxFlowControl=1\n",
+  "/data/network/sfp1_1.network": "[Match]\nName=sfp1_1\n\n[Network]\nAddress=192.168.21.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/sfp0_1.network": "[Match]\nName=sfp0_1\n\n[Network]\nAddress=192.168.11.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/sfp1.network": "[Match]\nName=sfp1\n\n[Network]\nAddress=192.168.20.2/24\n\n[Link]\nMTUBytes=9000\nTxFlowControl=1\n",
+  "/data/network/sfp1_3.network": "[Match]\nName=sfp1_3\n\n[Network]\nAddress=192.168.23.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/sfp0_2.network": "[Match]\nName=sfp0_2\n\n[Network]\nAddress=192.168.12.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/int0.network": "[Match]\nName=int0\n\n[Network]\nIPForward=ipv4\n\n[Address]\nAddress=169.254.0.1/24\n# The setting actually means DuplicateAddressDetection=none. We use the old flag here\n# on purpose to remain backward compatibility with systemd v243.2 (Yocto release zeus)\nDuplicateAddressDetection=true\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/eth0.network": "[Match]\nName=eth0\nKernelCommandLine=!nfsroot\n\n[Network]\nDHCP=ipv4\nIPForward=ipv4\n\n[DHCP]\nUseHostname=true\nUseDomains=true\nClientIdentifier=mac\n",
+  "/data/network/sfp0_3.network": "[Match]\nName=sfp0_3\n\n[Network]\nAddress=192.168.13.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/sfp1_2.network": "[Match]\nName=sfp1_2\n\n[Network]\nAddress=192.168.22.2/24\n\n[Link]\nMTUBytes=9000\n",
+  "/data/network/sfp0.network": "[Match]\nName=sfp0\n\n[Network]\nAddress=192.168.180.3/24\n\n[Link]\nMTUBytes=1500\nTxFlowControl=1\n",
+  "/sys/class/net/sfp0/operstate": "up\n",
+  "/sys/class/net/int0/operstate": "up\n",
+  "/sys/class/net/lo/operstate": "unknown\n",
+  "/sys/class/net/eth0/operstate": "down\n",
+  "/sys/class/net/sfp1/operstate": "down\n"
+}

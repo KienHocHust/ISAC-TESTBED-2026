@@ -1,0 +1,147 @@
+{
+  "status": "Unresolved: hardware streaming anomaly reproduced independently of OFDM",
+  "antenna_band_user_report": "617-960 / 1700-6000 MHz AUG22",
+  "host_uhd": "4.9.0.1-1ubuntu1",
+  "device_mpm": "4.8.0.0-g308126a4",
+  "device_fpga_version": "8.2",
+  "device_fpga_git": "fffffff.dirty",
+  "benchmark_rx": [
+    {
+      "log": "benchmark_n321_rx_log.txt",
+      "duration_seconds": 5,
+      "requested_samples_per_second": 500000,
+      "received_samples": 312929,
+      "approx_received_samples_per_second": 62585.8,
+      "fraction_of_expected": 0.1251716
+    },
+    {
+      "log": "benchmark_n321_250m_log.txt",
+      "duration_seconds": 3,
+      "requested_samples_per_second": 625000,
+      "received_samples": 234358,
+      "approx_received_samples_per_second": 78119.33333333333,
+      "fraction_of_expected": 0.12499093333333333
+    }
+  ],
+  "backup_sha256": {
+    "lib/firmware/n320.bin": "d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3",
+    "lib/firmware/n320.dts": "75a0db4c853a1e9a458b56fe8b6f54875e5fa208eb40c793148bd130e349f9cf",
+    "lib/firmware/n320.dtbo": "cd3d780515d78a081a4b12e1e0741bf9b7ae795dbc3f7b7e9c344c4cf801694d",
+    "usr/lib/python3.10/site-packages/usrp_mpm/dboard_manager/rhodium.py": "f5382e75a4c3c5aeb7563681b65382e1ae57f25d88d1a1d016f6da7064db0214",
+    "usr/lib/python3.10/site-packages/usrp_mpm/periph_manager/n3xx.py": "304403cccceb172f042ce300909e44aeb5b5418b7c267dd3c17874d9d25c5db1"
+  },
+  "radio_streams_stopped": true,
+  "firmware_or_eeprom_modified": false,
+  "baseline": {
+    "tx_gain_db": 10,
+    "rx_gain_db": 20,
+    "sample_rate": 500000,
+    "master_clock_rate": 200000000
+  },
+  "notes": [
+    "Absence of underflow alone does not validate the actual streaming rate.",
+    "No received OFDM payload has been confirmed.",
+    "Do not infer a hardware fault or blame antennas from the CAL test alone; current short captures can be affected by buffering.",
+    "Check original FPGA intent and align host/device stack before considering image changes."
+  ],
+  "experimental_factor8_tx": {
+    "applied_to_baseline": false,
+    "underflow_reports": 39,
+    "log": "diagnose_rf_factor8_log.txt",
+    "result": "Rejected: underflow returned; no confirmed received tone"
+  },
+  "isolated_uhd48": {
+    "installed_systemwide": false,
+    "location": "uhd48_check",
+    "comparison_executed": true,
+    "blocker": null,
+    "received_samples": 312929,
+    "duration_seconds": 5,
+    "log": "benchmark_n321_uhd48_log.txt",
+    "result": "Same approximately 1/8 received sample count as UHD 4.9; host-version mismatch alone does not explain it."
+  },
+  "device_fpga_history_user_report": "Unknown; device has been used by multiple groups for FPGA designs. Preserve existing image.",
+  "read_only_clock_audit": {
+    "master_clock_rate": 200000000.0,
+    "clock_source": "internal",
+    "time_source": "internal",
+    "ref_locked": "ref_locked: locked",
+    "device_to_host_timer_ratios": [
+      0.9968919693731298,
+      0.9970579846580292,
+      0.9971977946352599
+    ],
+    "rfnoc_blocks": [
+      "0/DDC#0",
+      "0/DDC#1",
+      "0/DUC#0",
+      "0/DUC#1",
+      "0/Radio#0",
+      "0/Radio#1",
+      "0/Replay#0"
+    ],
+    "note": "Uncommitted RFNoC graph DDC/DUC rates are defaults; not an operating stream readback and not evidence of wrong configuration."
+  },
+  "image_comparison": {
+    "current_bin_sha256": "d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3",
+    "stock49_bin_sha256": "269b9a00bd75c7b4bb670695cc76ca655aae946d47d4915084479f4068e8cf8b",
+    "same_as_stock49_HG": false,
+    "same_dts_stock49_HG": false,
+    "conversion": "MPM fpga_bit_to_bin flip=True",
+    "current_size": 17416348,
+    "stock49_size": 17416348,
+    "stock48_bin_sha256": "64c323e17c2fb80797072d6c6c64ad09b06c212636c10d420876742e86e9ea43",
+    "same_as_stock48_HG": false,
+    "same_dts_stock48_HG": true,
+    "stock48_size": 17416348,
+    "stock48_bundle_verified": true,
+    "stock48_manifest": "https://raw.githubusercontent.com/EttusResearch/uhd/v4.8.0.0/images/manifest.txt",
+    "device_modified": false
+  },
+  "approved_stock48_trial": {
+    "status": "All three RX benchmarks passed; stock48 image currently installed; awaiting user choice on retention/RF testing",
+    "management_ip": "192.168.3.102",
+    "results": [
+      {
+        "round": 1,
+        "received_samples": 2498817,
+        "errors": {
+          "Num dropped samples": 0,
+          "Num overruns detected": 0,
+          "Num sequence errors (Rx)": 0,
+          "Num timeouts (Rx)": 0
+        },
+        "passed": true,
+        "exit_code": 0
+      },
+      {
+        "round": 2,
+        "received_samples": 2498801,
+        "errors": {
+          "Num dropped samples": 0,
+          "Num overruns detected": 0,
+          "Num sequence errors (Rx)": 0,
+          "Num timeouts (Rx)": 0
+        },
+        "passed": true,
+        "exit_code": 0
+      },
+      {
+        "round": 3,
+        "received_samples": 2498823,
+        "errors": {
+          "Num dropped samples": 0,
+          "Num overruns detected": 0,
+          "Num sequence errors (Rx)": 0,
+          "Num timeouts (Rx)": 0
+        },
+        "passed": true,
+        "exit_code": 0
+      }
+    ],
+    "rf_transmitted": false,
+    "rollback_performed": false,
+    "backup_on_device": "/data/isac_image_trial_20261114/original_d774fd78",
+    "image_bin_sha256": "64c323e17c2fb80797072d6c6c64ad09b06c212636c10d420876742e86e9ea43"
+  }
+}

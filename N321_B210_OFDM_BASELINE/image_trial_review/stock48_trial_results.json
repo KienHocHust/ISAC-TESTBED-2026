@@ -1,0 +1,38 @@
+[
+  {
+    "round": 1,
+    "received_samples": 2498817,
+    "errors": {
+      "Num dropped samples": 0,
+      "Num overruns detected": 0,
+      "Num sequence errors (Rx)": 0,
+      "Num timeouts (Rx)": 0
+    },
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "round": 2,
+    "received_samples": 2498801,
+    "errors": {
+      "Num dropped samples": 0,
+      "Num overruns detected": 0,
+      "Num sequence errors (Rx)": 0,
+      "Num timeouts (Rx)": 0
+    },
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "round": 3,
+    "received_samples": 2498823,
+    "errors": {
+      "Num dropped samples": 0,
+      "Num overruns detected": 0,
+      "Num sequence errors (Rx)": 0,
+      "Num timeouts (Rx)": 0
+    },
+    "passed": true,
+    "exit_code": 0
+  }
+]

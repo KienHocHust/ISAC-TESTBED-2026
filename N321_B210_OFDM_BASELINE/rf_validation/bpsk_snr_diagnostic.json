@@ -1,0 +1,26 @@
+[
+  {
+    "start_s": 4,
+    "periodic_component_snr_db": -9.197416305541992,
+    "preamble_metric_max": 0.40082387214302356,
+    "cfo_modulo_packet_hz": 23.151275634765625
+  },
+  {
+    "start_s": 5,
+    "periodic_component_snr_db": -7.83217716217041,
+    "preamble_metric_max": 0.391858306939669,
+    "cfo_modulo_packet_hz": 25.092517852783203
+  },
+  {
+    "start_s": 6,
+    "periodic_component_snr_db": -6.356767654418945,
+    "preamble_metric_max": 0.42643211213107224,
+    "cfo_modulo_packet_hz": 24.572601318359375
+  },
+  {
+    "start_s": 7,
+    "periodic_component_snr_db": -8.52980899810791,
+    "preamble_metric_max": 0.45231333490902687,
+    "cfo_modulo_packet_hz": 24.429027557373047
+  }
+]

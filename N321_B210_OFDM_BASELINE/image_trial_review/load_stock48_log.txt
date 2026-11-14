@@ -1,0 +1,29 @@
+[INFO] [UHD] linux; GNU C++ version 15.1.0; Boost_108800; UHD_4.8.0.0+ds1-2ubuntu2.1
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.3.102,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,skip_init=1
+[INFO] [MPMD] Claimed device without full initialization.
+[INFO] [MPMD IMAGE LOADER] Starting update. This may take a while.
+[INFO] [MPM.PeriphManager] Installing component `fpga'
+[INFO] [MPM.PeriphManager] Installing component `dts'
+[INFO] [MPM.RPCServer] Resetting peripheral manager.
+[INFO] [MPM.PeriphManager] Device serial number: 3258433
+[INFO] [MPM.Rhodium-0] Enabling LO distribution board
+[INFO] [MPM.Rhodium-0] Successfully loaded all peripherals!
+[INFO] [MPM.Rhodium-1] Successfully loaded all peripherals!
+[INFO] [MPM.PeriphManager] Initialized 2 daughterboard(s).
+[INFO] [MPM.PeriphManager] No QSFP board detected: Assuming it is disabled in the device tree overlay (e.g., HG, XG images).
+[INFO] [MPM.PeriphManager] init() called with device args `clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPMD IMAGE LOADER] Update component function succeeded.
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.3.102,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,find_all=1
+[INFO] [MPM.PeriphManager] init() called with device args `find_all=1,fpga=HG,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `find_all=1,fpga=HG,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `find_all=1,fpga=HG,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'

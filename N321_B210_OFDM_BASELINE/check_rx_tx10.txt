@@ -1,0 +1,5 @@
+Expected 64 bytes per payload: b'HELLO N321 -> B210, OFDM AWGN TEST                              '
+Counts are CRC-passed payloads; these are not BER/PER or transmitted packet counts.
+New capture: counters reset.
+RX bytes=0 matched=0 unexpected=0 partial=0
+FAIL: no complete matching capture, mismatches, or trailing partial payload.

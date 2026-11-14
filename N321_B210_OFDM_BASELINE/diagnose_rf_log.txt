@@ -1,0 +1,30 @@
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.180.3,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+ACTUAL CONFIG {'tx_rate': 500000.0, 'rx_rate': 500000.0, 'tx_frequency': 2450000000.0, 'tx_gain': 10.0, 'tx_antenna': 'TX/RX', 'tx_subdev': 'A:0', 'rx_subdev': 'A:A A:B', 'rx_frequencies': [2449999999.9999976, 2449999999.9999976], 'rx_lo_locked': ['LO: locked', 'LO: locked']}
+[WARNING] [0/Radio#0] Attempting to set tick rate to 0. Skipping.
+{"rx_gain": 20, "antenna": "RX2", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -74.3727798461914, "peak_hz": 30151.3671875, "peak_dbfs": -106.27828781241469, "band_floor_dbfs": -109.14219387052684}, {"samples": 131072, "rms_dbfs": -74.37290954589844, "peak_hz": 28564.453125, "peak_dbfs": -106.39971272323936, "band_floor_dbfs": -109.17360934045607}]}
+{"rx_gain": 20, "antenna": "RX2", "tx_enabled": 1, "channels": [{"samples": 131072, "rms_dbfs": -74.37501525878906, "peak_hz": 29052.734375, "peak_dbfs": -106.14713779611756, "band_floor_dbfs": -109.2306634540517}, {"samples": 131072, "rms_dbfs": -74.34346008300781, "peak_hz": 25634.765625, "peak_dbfs": -105.92698223485243, "band_floor_dbfs": -109.18510725370801}]}
+{"rx_gain": 20, "antenna": "RX2", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -74.3180160522461, "peak_hz": 31860.3515625, "peak_dbfs": -105.73002337473396, "band_floor_dbfs": -109.22995293077616}, {"samples": 131072, "rms_dbfs": -74.3354721069336, "peak_hz": 27465.8203125, "peak_dbfs": -105.95827694014605, "band_floor_dbfs": -109.17999407255397}]}
+{"rx_gain": 20, "antenna": "TX/RX", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -74.41740417480469, "peak_hz": 31372.0703125, "peak_dbfs": -106.30013172116763, "band_floor_dbfs": -109.05005433111089}, {"samples": 131072, "rms_dbfs": -74.4157943725586, "peak_hz": 27709.9609375, "peak_dbfs": -105.5652878608363, "band_floor_dbfs": -109.05481369111808}]}
+{"rx_gain": 20, "antenna": "TX/RX", "tx_enabled": 1, "channels": [{"samples": 131072, "rms_dbfs": -74.33589935302734, "peak_hz": 25634.765625, "peak_dbfs": -105.53649881250209, "band_floor_dbfs": -109.23818201218648}, {"samples": 131072, "rms_dbfs": -74.35206604003906, "peak_hz": 26245.1171875, "peak_dbfs": -106.11889079620957, "band_floor_dbfs": -109.11540178803958}]}
+{"rx_gain": 20, "antenna": "TX/RX", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -74.3833236694336, "peak_hz": 25756.8359375, "peak_dbfs": -106.40761940261666, "band_floor_dbfs": -109.24973738416216}, {"samples": 131072, "rms_dbfs": -74.36375427246094, "peak_hz": 28930.6640625, "peak_dbfs": -106.69127622165797, "band_floor_dbfs": -109.1215824680478}]}
+{"rx_gain": 40, "antenna": "RX2", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -71.93256378173828, "peak_hz": 29663.0859375, "peak_dbfs": -99.52772181785687, "band_floor_dbfs": -106.25976453582753}, {"samples": 131072, "rms_dbfs": -74.12836456298828, "peak_hz": 35400.390625, "peak_dbfs": -105.94135293169258, "band_floor_dbfs": -108.89727911917902}]}
+{"rx_gain": 40, "antenna": "RX2", "tx_enabled": 1, "channels": [{"samples": 131072, "rms_dbfs": -71.69989776611328, "peak_hz": 26855.46875, "peak_dbfs": -99.88409364094747, "band_floor_dbfs": -106.30095493123571}, {"samples": 131072, "rms_dbfs": -74.10639953613281, "peak_hz": 25146.484375, "peak_dbfs": -104.93563045506087, "band_floor_dbfs": -108.62082542648821}]}
+{"rx_gain": 40, "antenna": "RX2", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -72.1553955078125, "peak_hz": 31860.3515625, "peak_dbfs": -99.72664080181404, "band_floor_dbfs": -106.37599320789164}, {"samples": 131072, "rms_dbfs": -74.03148651123047, "peak_hz": 30517.578125, "peak_dbfs": -104.7172723855075, "band_floor_dbfs": -108.69126550326017}]}
+{"rx_gain": 40, "antenna": "TX/RX", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -74.26009368896484, "peak_hz": 34423.828125, "peak_dbfs": -105.57544033718409, "band_floor_dbfs": -108.87831682756733}, {"samples": 131072, "rms_dbfs": -74.09728240966797, "peak_hz": 29296.875, "peak_dbfs": -105.62032930636013, "band_floor_dbfs": -108.61036204010767}]}
+{"rx_gain": 40, "antenna": "TX/RX", "tx_enabled": 1, "channels": [{"samples": 131072, "rms_dbfs": -74.26258850097656, "peak_hz": 36254.8828125, "peak_dbfs": -105.56069279242182, "band_floor_dbfs": -108.97348600487081}, {"samples": 131072, "rms_dbfs": -74.20773315429688, "peak_hz": 30029.296875, "peak_dbfs": -105.52347777170937, "band_floor_dbfs": -108.80592691378365}]}
+{"rx_gain": 40, "antenna": "TX/RX", "tx_enabled": 0, "channels": [{"samples": 131072, "rms_dbfs": -71.51607513427734, "peak_hz": 49926.7578125, "peak_dbfs": -102.59279437214514, "band_floor_dbfs": -106.64066313543086}, {"samples": 131072, "rms_dbfs": -72.85482788085938, "peak_hz": 25634.765625, "peak_dbfs": -102.9869359296274, "band_floor_dbfs": -107.17542436671245}]}
+RF test finished; TX stream stopped.

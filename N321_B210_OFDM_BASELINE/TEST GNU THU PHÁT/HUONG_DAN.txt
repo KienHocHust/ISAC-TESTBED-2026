@@ -1,0 +1,35 @@
+THỬ GNU RADIO: HELLO KIÊN TRẦN ĐÃ LÀM ĐƯỢC
+
+Nội dung gốc trong TX_MESSAGE.txt có đúng một khoảng trắng ở đầu và cuối:
+ HELLO KIÊN TRẦN ĐÃ LÀM ĐƯỢC 
+Mã hóa UTF-8: 39 byte, thêm khoảng trắng cho đủ gói 64 byte.
+Không thêm nhiễu nhân tạo. TX gain 30 dB, RX gain 60 dB, 2,45 GHz,
+200 kS/s, BPSK, RX offset +11400 Hz, sync threshold 0.3, TX scale 0.8/64.
+
+CHẠY BẰNG GNU RADIO COMPANION
+1. Đóng các chương trình khác đang dùng N321/B210. Giữ nguyên dây và ăng-ten.
+2. Trong terminal:
+cd '/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/TEST GNU THU PHÁT'
+gnuradio-companion TEST_GNU_THU_PHAT.grc
+3. Nếu GRC đã mở trước khi tạo folder, đóng và mở lại để nhận block ISAC UTF-8 OFDM RX.
+4. Nhấn Generate rồi Execute (F5/F6 theo phím tắt GRC).
+5. Ban đầu TX DATA = 0. Chuyển TX DATA = 1 để phát câu trên.
+6. Xem phổ TX/RX; nội dung thu sau CRC lưu vào rx_payload.bin.
+7. Muốn thấy câu thu bằng chữ, mở terminal thứ hai trong cùng folder:
+python3 -u check_rx.py
+Khi nhận đúng sẽ hiện THU ĐÚNG kèm câu tiếng Việt. Bộ đếm matched đếm gói đúng.
+8. Chuyển TX DATA = 0 rồi nhấn Stop/đóng cửa sổ để dừng và giải phóng USRP.
+
+GUI không tự dừng sau 8 giây. Mỗi lần khởi chạy ghi đè rx_payload.bin.
+Trong GRC, Message Text hiển thị câu phát; dòng THU ĐÚNG của monitor mới xác nhận nhận đúng.
+Không chạy GUI và script thử RF đồng thời.
+
+CHẠY PHÉP THỬ TỰ DỪNG, LƯU LOG
+bash chay_8_giay.sh
+Script tạo folder run_<thời-gian>_<PID> chứa run.log, JSON và payload .bin.
+Kết quả đúng yêu cầu matched > 0, unexpected = 0, partial_bytes = 0.
+passed: true yêu cầu ít nhất 10 gói đúng. Đây không phải phép đo BER/PER.
+
+Block riêng isac_utf8_ofdm_rx.block.yml đã được đăng ký tại
+/home/keindeptrai/.local/state/gnuradio/isac_utf8_ofdm_rx.block.yml.
+Giữ isac_ofdm_modem.py trong folder này; không sửa thư viện GNU Radio hệ thống.

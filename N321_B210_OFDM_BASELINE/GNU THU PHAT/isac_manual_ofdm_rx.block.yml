@@ -1,0 +1,31 @@
+id: isac_manual_ofdm_rx
+label: ISAC Manual UTF-8 OFDM RX
+category: '[ISAC]'
+parameters:
+- id: fft_len
+  label: FFT length
+  dtype: int
+  default: 64
+- id: packet_len
+  label: Payload bytes
+  dtype: int
+  default: 64
+inputs:
+- domain: stream
+  dtype: complex
+outputs:
+- domain: stream
+  dtype: byte
+templates:
+  imports: 'import sys
+
+    sys.path.insert(0, ''/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/GNU
+    THU PHAT'')
+
+    import isac_ofdm_modem
+
+    from payload_utils import encode_payload'
+  make: isac_ofdm_modem.ofdm_rx(fft_len=${fft_len}, cp_len=${fft_len}//4, bps_header=1,
+    bps_payload=1, scramble_bits=False, packet_length_tag_key="rx_len", frame_length_tag_key="frame_rx_len",
+    sync_threshold=0.3, expected_payload_bytes=${packet_len})
+file_format: 1

@@ -1,0 +1,15 @@
+{
+  "current_bin_sha256": "d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3",
+  "stock49_bin_sha256": "269b9a00bd75c7b4bb670695cc76ca655aae946d47d4915084479f4068e8cf8b",
+  "same_as_stock49_HG": false,
+  "same_dts_stock49_HG": false,
+  "conversion": "MPM fpga_bit_to_bin flip=True",
+  "current_size": 17416348,
+  "stock49_size": 17416348,
+  "stock48_bin_sha256": "64c323e17c2fb80797072d6c6c64ad09b06c212636c10d420876742e86e9ea43",
+  "same_as_stock48_HG": false,
+  "same_dts_stock48_HG": true,
+  "stock48_size": 17416348,
+  "stock48_bundle_verified": true,
+  "stock48_manifest": "https://raw.githubusercontent.com/EttusResearch/uhd/v4.8.0.0/images/manifest.txt"
+}

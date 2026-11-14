@@ -1,0 +1,13 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enx0826ae31a106  UP             192.168.180.2/24 fe80::a26:aeff:fe31:a106/64 
+wlo1             UP             192.168.3.134/24 fe80::35e7:9bcf:8eb2:5709/64 
+PING 192.168.3.102 (192.168.3.102) 56(84) bytes of data.
+64 bytes from 192.168.3.102: icmp_seq=1 ttl=64 time=214 ms
+64 bytes from 192.168.3.102: icmp_seq=2 ttl=64 time=10.0 ms
+64 bytes from 192.168.3.102: icmp_seq=3 ttl=64 time=1.55 ms
+64 bytes from 192.168.3.102: icmp_seq=4 ttl=64 time=19.0 ms
+
+--- 192.168.3.102 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 1.552/61.221/214.314/88.603 ms
+ni-n3xx-3258433

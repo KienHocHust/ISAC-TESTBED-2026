@@ -1,0 +1,51 @@
+KẾT QUẢ KIỂM TRA TRỰC TIẾP N321 / B210
+
+Trạng thái: chưa xác nhận truyền thông điệp OFDM thành công.
+
+1. Cấu hình bản OFDM
+- GRC và Python vẫn đồng nhất: TX gain 10 dB, RX gain 20 dB, logical rate 500 kS/s, N321 master clock 200 MHz.
+- Không áp dụng thử nghiệm nhân tốc độ lên 8 vào bản OFDM.
+- Kiểm tra cú pháp và biên dịch GRC đã đạt.
+
+2. Đã đo trực tiếp
+- B210 serial F4A11D, USB 3; cả hai frontend và hai lựa chọn antenna đã được kiểm tra bằng tone. LO khóa, tần số hai bên khớp.
+- Các phép đo tone ngắn chưa xác nhận được tín hiệu thu theo lúc bật/tắt. Không đủ để kết luận cáp hoặc phần cứng hỏng.
+- Benchmark UHD chính thức, độc lập với GNU Radio, chỉ thu N321:
+  * 500 kS/s trong 5 giây: 312.929 mẫu, khoảng 62.586 mẫu/giây; không báo drop/overrun.
+  * 625 kS/s trong 3 giây, master clock 250 MHz: 234.358 mẫu, khoảng 78.119 mẫu/giây.
+  * Cả hai đạt xấp xỉ 1/8 số mẫu dự kiến. Vì vậy không có U không có nghĩa tốc độ streaming đã đúng.
+- Thử TX requested rate gấp 8 làm underflow quay lại (39 báo cáo); thử nghiệm đã dừng và không đưa vào baseline.
+
+3. Phiên bản và bảo toàn thiết kế
+- Máy tính: UHD 4.9.0.1; N321 báo MPM 4.8.0.0, FPGA 8.2, git fffffff.dirty.
+- Người dùng không rõ nguồn gốc image và thiết bị từng được nhiều nhóm dùng làm FPGA. Chưa xác định nguyên nhân của lệch hệ số 8. Không khẳng định chỉ do khác phiên bản.
+- Image, device tree và mã MPM đã sao lưu vào device_backup/n321_before_changes.tar; SHA256 trong diagnostic_summary.json.
+- Không nạp firmware/FPGA, không sửa EEPROM hoặc bảng hiệu chuẩn. Các stream thử đã dừng.
+
+4. Đối chiếu UHD 4.8 riêng
+- Đã tải và giải nén gói uhd-host và libuhd 4.8 chính thức vào uhd48_check, không cài vào hệ thống.
+- Chưa chạy được do thiếu libpython3.13.so.1.0; hai lần tải thư viện phụ thuộc bị timeout. Chưa có kết quả so sánh 4.8 với 4.9.
+
+5. Bước còn cần
+- Hoàn tất bộ UHD 4.8 riêng để đo lại cùng image hiện có, hoặc xác minh bộ FPGA/MPM và ý nghĩa xử lý DSP của thiết kế đang được phòng lab dùng.
+- Chỉ thay image sau khi xác định được thiết kế cần giữ và có phương án khôi phục.
+- Chưa thêm nhiễu hoặc kết luận đo BER/PER.
+
+CẬP NHẬT: ĐÃ CHẠY ĐƯỢC UHD 4.8 RIÊNG
+Đã tải được thư viện Python phụ thuộc ở lần thử tiếp theo, không cài vào hệ thống. Benchmark UHD 4.8 ở 500 kS/s trong 5 giây nhận 312.929 mẫu, giống kết quả UHD 4.9. Log: benchmark_n321_uhd48_log.txt. Vì vậy khác phiên bản host 4.9/MPM 4.8 không giải thích được toàn bộ hiện tượng; cần kiểm tra tiếp FPGA/clock/cấu hình xử lý đang chạy. Chưa xác định nguyên nhân duy nhất, chưa thay image và chưa có payload OFDM đúng.
+
+KIỂM TRA CHỈ ĐỌC CLOCK VÀ RFNoC
+Master clock và Radio#0/#1 báo 200 MHz; clock/time source internal; reference locked. Đồng hồ N321 tăng khoảng 1.003 giây trong mỗi phép đo host khoảng 1.006 giây; không thấy sai lệch hệ số 8 ở đồng hồ thời gian. Kết quả này không hiệu chuẩn độ chính xác oscillator và không loại trừ mọi lỗi clock/DSP. RFNoC liệt kê Radio, DDC, DUC và Replay; đường kết nối tĩnh Radio→DDC→host và host→DUC→Radio. DDC/DUC trong graph chưa commit báo giá trị mặc định 1.0 và tick 0, không dùng các giá trị đó làm bằng chứng lỗi. Chưa xác định nguyên nhân thiếu mẫu. Không streaming, không phát RF hay nạp image trong bước này. File chi tiết: n321_clock_readback.json và n321_rfnoc_readback.json.
+
+ĐỐI CHIẾU IMAGE, KHÔNG NẠP
+Đã tải gói chuẩn UHD 4.8 theo manifest tag v4.8.0.0 từ Ettus, xác minh SHA256 gói: 1240832332a88539ee5a419161b35520aff83f48b22289eac03c094cbe953f44. Dùng công cụ fpga_bit_to_bin của MPM với flip=True để chuyển .bit chuẩn thành .bin trước khi so sánh với bản sao lưu, tránh nhầm khác định dạng.
+- FPGA hiện tại KHÔNG khớp byte với HG chuẩn UHD 4.8.
+- FPGA hiện tại KHÔNG khớp byte với HG chuẩn UHD 4.9 đã có trên máy.
+- Device tree hiện tại KHỚP BYTE với HG chuẩn UHD 4.8.
+Không thể suy ra nội dung DSP cụ thể hoặc khẳng định nguyên nhân lỗi từ checksum khác nhau; một build khác có thể vẫn cùng chức năng. Cần phép thử có kiểm soát hoặc mã nguồn/build tương ứng để xác nhận.
+Tất cả file tham chiếu và kết quả nằm trong image_comparison/. Không tải gì lên N321 và không nạp FPGA trong bước đối chiếu này.
+
+KẾT QUẢ PHÉP THỬ IMAGE ĐÃ ĐƯỢC NGƯỜI DÙNG DUYỆT
+Đã nạp HG chuẩn UHD 4.8 qua đường quản trị 192.168.3.102. Checksum .bin sau nạp khớp bản chuẩn 64c323e17c2fb80797072d6c6c64ad09b06c212636c10d420876742e86e9ea43; .dts/.dtbo vẫn khớp bản đã kiểm tra. Cả eth0 và SFP0 up. Bản gốc còn trên laptop và /data/isac_image_trial_20261114/original_d774fd78 của N321.
+Ba benchmark chỉ thu 500 kS/s, 5 giây đều đạt, số mẫu lần lượt: 2498817, 2498801, 2498823. Không dropped/overrun/sequence error/timeout. Bất thường chỉ đạt khoảng 1/8 số mẫu không còn xuất hiện trong ba lần thử này. Chưa kiểm tra phát RF/thu thông điệp OFDM trên image mới.
+Image chuẩn hiện đang được lưu và hoạt động trên N321, chưa khôi phục vì benchmark đạt; đang chờ người dùng chọn tiếp tục kiểm tra RF với image này hay khôi phục bản gốc. Chưa sửa OS/MPM/EEPROM, chưa phát RF trong phép thử image.

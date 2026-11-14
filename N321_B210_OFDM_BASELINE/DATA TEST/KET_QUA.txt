@@ -1,0 +1,32 @@
+KẾT QUẢ PHÁT/THU SỐ 1 → 10
+
+Phát lặp 1 → 10, mỗi số là ASCII trong một gói 64 byte có đệm khoảng trắng.
+N321 RF0 TX/RX → B210 A RX2; 2,45 GHz; TX gain 30 dB, RX gain 60 dB.
+200 kS/s, BPSK, RX offset +11400 Hz, TX scale 0.8/64, sync threshold 0.3.
+Mỗi lượt bật dữ liệu 8 giây; chưa thêm nhiễu nhân tạo.
+
+run_01: 36 gói đúng, 0 gói ngoài tập dữ liệu, 0 byte lẻ.
+Chưa nhận được: 1, 7.
+
+run_02: 0 gói đúng, 0 gói ngoài tập dữ liệu, 0 byte lẻ.
+Chưa nhận được: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+Số | Lượt 1 | Lượt 2 | Tổng
+1 | 0 | 0 | 0
+2 | 3 | 0 | 3
+3 | 5 | 0 | 5
+4 | 6 | 0 | 6
+5 | 6 | 0 | 6
+6 | 5 | 0 | 5
+7 | 0 | 0 | 0
+8 | 3 | 0 | 3
+9 | 4 | 0 | 4
+10 | 4 | 0 | 4
+
+Các số chưa nhận được trong toàn bộ phép thử: 1, 7.
+Số gói đúng là các gói đã qua CRC và khớp toàn bộ 64 byte; không phải tỷ lệ BER/PER.
+Thứ tự RX có thể bỏ số vì mất gói; không khẳng định thu được toàn bộ dãy liên tiếp.
+
+Chạy lại và lưu riêng: bash "DATA TEST/chay_lai.sh"
+Xem nội dung gửi: run_01/TX_SEQUENCE.txt; nội dung thu: run_01/RX_SEQUENCE.txt và run_02/RX_SEQUENCE.txt.
+IQ TX/RX: các file *_tx_iq.c64, *_rx_iq.c64 (complex64); payload giải mã: *.bin.

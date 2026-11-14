@@ -1,0 +1,72 @@
+
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[00:00:00.000565] Creating the usrp device with: type=n3xx,addr=192.168.180.3,mgmt_addr=192.168.180.3,master_clock_rate=200e6...
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.180.3,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.main] Launching USRP/MPM, version: 4.8.0.0-g308126a4
+[INFO] [MPM.main] Spawning RPC process...
+[INFO] [MPM.PeriphManager] Device serial number: 3258433
+[INFO] [MPM.Rhodium-0] Enabling LO distribution board
+[INFO] [MPM.Rhodium-0] Successfully loaded all peripherals!
+[INFO] [MPM.Rhodium-1] Successfully loaded all peripherals!
+[INFO] [MPM.PeriphManager] Initialized 2 daughterboard(s).
+[INFO] [MPM.PeriphManager] No QSFP board detected: Assuming it is disabled in the device tree overlay (e.g., HG, XG images).
+[INFO] [MPM.PeriphManager] init() called with device args `clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.RPCServer] RPC server ready!
+[INFO] [MPM.RPCServer] Spawning watchdog task...
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete
+Using Device: Single USRP:
+  Device: N300-Series Device
+  Mboard 0: n320
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: Rhodium
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: Rhodium
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: B
+    TX Subdev: Rhodium
+
+[00:00:06.43179833] Setting device timestamp to 0...
+[00:00:06.55768187] Testing receive rate 0.500000 Msps on 1 channels
+[00:00:11.64827818] Benchmark complete.
+
+
+Benchmark rate summary:
+  Num received samples:     312918
+  Num dropped samples:      0
+  Num overruns detected:    0
+  Num transmitted samples:  0
+  Num sequence errors (Tx): 0
+  Num sequence errors (Rx): 0
+  Num underruns detected:   0
+  Num late commands:        0
+  Num timeouts (Tx):        0
+  Num timeouts (Rx):        0
+
+
+Done!
+

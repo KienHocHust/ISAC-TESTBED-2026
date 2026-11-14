@@ -1,0 +1,27 @@
+{
+  "master_clock_rate": 200000000.0,
+  "clock_source": "internal",
+  "time_source": "internal",
+  "sensors": {
+    "temp": "temperature: 38.0 C",
+    "fan": "cooling fan: 4560.0 rpm",
+    "ref_locked": "ref_locked: locked"
+  },
+  "timer_checks": [
+    {
+      "host_seconds": 1.006141308000224,
+      "device_seconds": 1.00301419,
+      "ratio": 0.9968919693731298
+    },
+    {
+      "host_seconds": 1.0058992409994971,
+      "device_seconds": 1.0029398699999998,
+      "ratio": 0.9970579846580292
+    },
+    {
+      "host_seconds": 1.0057703250004124,
+      "device_seconds": 1.00295195,
+      "ratio": 0.9971977946352599
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "sample_rate": 500000,
+    "start": 4,
+    "cfo_modulo_packet_hz": 77.07176971435547,
+    "direct": 0.8274424076080322,
+    "conjugated": 0.2637091279029846
+  },
+  {
+    "sample_rate": 500000,
+    "start": 5,
+    "cfo_modulo_packet_hz": 78.40928649902344,
+    "direct": 0.8963879346847534,
+    "conjugated": 0.28555598855018616
+  },
+  {
+    "sample_rate": 500000,
+    "start": 6,
+    "cfo_modulo_packet_hz": 82.46556854248047,
+    "direct": 0.9684741497039795,
+    "conjugated": 0.3120853900909424
+  },
+  {
+    "sample_rate": 500000,
+    "start": 7,
+    "cfo_modulo_packet_hz": 41.66216278076172,
+    "direct": 0.16948658227920532,
+    "conjugated": 0.11158519983291626
+  },
+  {
+    "sample_rate": 200000,
+    "start": 4,
+    "cfo_modulo_packet_hz": 90.7607421875,
+    "direct": 0.978575587272644,
+    "conjugated": 0.3061937689781189
+  },
+  {
+    "sample_rate": 200000,
+    "start": 5,
+    "cfo_modulo_packet_hz": 90.5572280883789,
+    "direct": 0.9878872036933899,
+    "conjugated": 0.3096717298030853
+  },
+  {
+    "sample_rate": 200000,
+    "start": 6,
+    "cfo_modulo_packet_hz": 92.06047058105469,
+    "direct": 0.9507578611373901,
+    "conjugated": 0.29771220684051514
+  },
+  {
+    "sample_rate": 200000,
+    "start": 7,
+    "cfo_modulo_packet_hz": 91.410400390625,
+    "direct": 0.942471981048584,
+    "conjugated": 0.29942482709884644
+  }
+]

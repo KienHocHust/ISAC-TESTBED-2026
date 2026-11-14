@@ -1,0 +1,51 @@
+
+[00:00:00.000282] Creating the usrp device with: type=n3xx,addr=192.168.180.3,mgmt_addr=192.168.3.102,master_clock_rate=200e6...
+Using Device: Single USRP:
+  Device: N300-Series Device
+  Mboard 0: n320
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: Rhodium
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: Rhodium
+  TX Channel: 1
+    TX DSP: 1
+    TX Dboard: B
+    TX Subdev: Rhodium
+
+[00:00:06.77580868] Setting device timestamp to 0...
+[00:00:06.90088849] Testing receive rate 0.500000 Msps on 1 channels
+[00:00:11.92082013] Benchmark complete.
+
+
+Benchmark rate summary:
+  Num received samples:     2498817
+  Num dropped samples:      0
+  Num overruns detected:    0
+  Num transmitted samples:  0
+  Num sequence errors (Tx): 0
+  Num sequence errors (Rx): 0
+  Num underruns detected:   0
+  Num late commands:        0
+  Num timeouts (Tx):        0
+  Num timeouts (Rx):        0
+
+
+Done!
+
+[INFO] [UHD] linux; GNU C++ version 15.1.0; Boost_108800; UHD_4.8.0.0+ds1-2ubuntu2.1
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.3.102,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete

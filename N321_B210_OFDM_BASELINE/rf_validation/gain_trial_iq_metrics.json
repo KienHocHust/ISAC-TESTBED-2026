@@ -1,0 +1,18 @@
+{
+  "20": {
+    "rx_peak": 0.46657297015190125,
+    "rms_on": 0.0013153372565284371,
+    "preamble_metric_max": 0.6027460673714601,
+    "preamble_above_0p9": 0,
+    "repeat_720_corr": 0.15943267941474915,
+    "cfo_median_hz": null
+  },
+  "30": {
+    "rx_peak": 0.16069072484970093,
+    "rms_on": 0.003921970259398222,
+    "preamble_metric_max": 0.6208061107287006,
+    "preamble_above_0p9": 0,
+    "repeat_720_corr": 0.17511139810085297,
+    "cfo_median_hz": null
+  }
+}

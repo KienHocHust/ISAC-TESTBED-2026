@@ -1,0 +1,22 @@
+{
+  "tx": {
+    "peak": 0.5789937973022461,
+    "rms_on": 0.09186046570539474,
+    "correlation_lag32": 0.06351874023675919,
+    "correlation_lag64": 0.1778542399406433,
+    "correlation_lag80": 0.24383437633514404,
+    "correlation_lag720": 0.9901931285858154,
+    "preamble_metric_max": 1.0000000607508979,
+    "preamble_above_0p9": 13880
+  },
+  "rx": {
+    "peak": 0.5093521475791931,
+    "rms_on": 0.008077207952737808,
+    "correlation_lag32": 0.0214392077177763,
+    "correlation_lag64": 0.01568787172436714,
+    "correlation_lag80": 0.003686276962980628,
+    "correlation_lag720": 0.013039853423833847,
+    "preamble_metric_max": 0.8915229256823316,
+    "preamble_above_0p9": 0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "tx": {
+    "samples": 6134950,
+    "seconds": 12.2699,
+    "windows": {
+      "off": {
+        "rms_dbfs": -300.0,
+        "max_abs": 0.0,
+        "schmidl_max": 0.0,
+        "schmidl_above_0p8": 0,
+        "center_band_dbfs": -300.0,
+        "outer_band_dbfs": -300.0
+      },
+      "on": {
+        "rms_dbfs": 19.467098236083984,
+        "max_abs": 59.28896713256836,
+        "schmidl_max": 0.9999999203002762,
+        "schmidl_above_0p8": 8008,
+        "center_band_dbfs": -8.125546753488354,
+        "outer_band_dbfs": -20.384450162143647
+      },
+      "late": {
+        "rms_dbfs": 19.46402359008789,
+        "max_abs": 59.28896713256836,
+        "schmidl_max": 0.9999999203002762,
+        "schmidl_above_0p8": 8008,
+        "center_band_dbfs": -8.129359541821234,
+        "outer_band_dbfs": -20.324865963795254
+      }
+    }
+  },
+  "rx": {
+    "samples": 6009840,
+    "seconds": 12.01968,
+    "windows": {
+      "off": {
+        "rms_dbfs": -29.53659439086914,
+        "max_abs": 0.6024904251098633,
+        "schmidl_max": 0.9557536218373639,
+        "schmidl_above_0p8": 358,
+        "center_band_dbfs": -58.68356423294158,
+        "outer_band_dbfs": -61.272914703412084
+      },
+      "on": {
+        "rms_dbfs": -52.60063552856445,
+        "max_abs": 0.04272295907139778,
+        "schmidl_max": 0.8616087329463911,
+        "schmidl_above_0p8": 236,
+        "center_band_dbfs": -80.1967187359501,
+        "outer_band_dbfs": -86.94967832694297
+      },
+      "late": {
+        "rms_dbfs": -41.53102111816406,
+        "max_abs": 0.25441357493400574,
+        "schmidl_max": 0.8795589244148349,
+        "schmidl_above_0p8": 231,
+        "center_band_dbfs": -69.28200407032159,
+        "outer_band_dbfs": -72.16916549224608
+      }
+    }
+  }
+}

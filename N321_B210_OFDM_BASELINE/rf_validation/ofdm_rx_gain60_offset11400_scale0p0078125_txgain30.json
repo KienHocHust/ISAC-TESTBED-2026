@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "bytes": 0,
+  "matched": 0,
+  "unexpected": 0,
+  "partial_bytes": 0,
+  "rx_gain": 60,
+  "tx_gain": 30,
+  "rate": 500000,
+  "tx_observed_sps": 499029.6147938192,
+  "rx_observed_sps": 499953.8027259363,
+  "rx_offset_hz": 11400.0,
+  "tx_scale": 0.0078125,
+  "expected_payload": "HELLO N321 -> B210, OFDM AWGN TEST                              ",
+  "note": "CRC-passed decoded payloads only; not a BER/PER measurement."
+}

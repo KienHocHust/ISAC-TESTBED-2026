@@ -1,0 +1,35 @@
+ĐÃ XÁC ĐỊNH WIFI ROUTER: MINHDZ. BSSID D4:6E:0E:2E:95:C0 khớp MAC trên nhãn TP-Link. Tên mặc định TP-LINK_95C0 đã được đổi.
+
+KIỂM TRA QUẢN TRỊ N321 KHI WIFI ROUTER KHÔNG CÓ INTERNET
+
+Mục tiêu: kiểm tra laptop truy cập cổng quản trị N321 192.168.3.102. Không nạp FPGA, không bật phát RF.
+
+1. Trước khi chuyển Wi-Fi
+- Dừng GNU Radio nếu đang chạy.
+- Giữ nguyên dây laptop–SFP0, router–RJ45 quản trị N321 và USB B210. Giữ N321 đang bật.
+- Mở file hướng dẫn này trên máy, không cần Internet để đọc.
+
+2. Chuyển Wi-Fi laptop sang đúng router đang nối N321
+Chờ khoảng 30 giây. Nếu báo không có Internet, chọn tiếp tục kết nối nếu được hỏi. Kiểm tra laptop không tự quay lại Wi-Fi Kiên Trần.
+
+3. Mở Terminal và chạy từng dòng
+
+cd '/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE'
+ip -br address > offline_network_check.txt
+ping -c 4 192.168.3.102 >> offline_network_check.txt 2>&1
+ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o HostKeyAlias=192.168.180.3 -o ConnectTimeout=5 root@192.168.3.102 hostname >> offline_network_check.txt 2>&1
+cat offline_network_check.txt
+
+Lệnh SSH chỉ đọc hostname; HostKeyAlias dùng khóa SSH N321 đã được tin cậy qua địa chỉ SFP cũ. Không tắt kiểm tra khóa SSH nếu báo lỗi.
+
+4. Diễn giải
+- Mong đợi Wi-Fi wlo1 có IP 192.168.3.x/24; LAN nối SFP vẫn 192.168.180.2/24. Không tự gán IP nếu khác.
+- Ping có dòng bytes from 192.168.3.102: thiết bị trả lời ping. Ping không trả lời chưa đủ để kết luận SSH cũng không hoạt động, vì vậy vẫn chạy bước SSH.
+- SSH in hostname N321 (trước đây ni-n3xx-3258433): đã truy cập được bằng khóa thiết bị đã tin cậy qua IP quản trị.
+- Timeout, Network unreachable, Host key verification failed hoặc Permission denied: giữ log, chưa coi đường quản trị là đạt, không đổi khóa/mật khẩu theo phỏng đoán.
+- IP 192.168.3.102 do DHCP cấp nên có thể thay đổi; nếu không truy cập được, không đoán IP hay reset router/N321.
+
+5. Sau khi kiểm tra
+Không rút dây, không tắt nguồn hoặc nạp image. Chỉ chuyển Wi-Fi laptop trở lại mạng có Internet để liên lạc với trợ lý. Giữ dây N321–router và laptop–SFP0 nguyên vẹn. Khi quay lại, báo đã chạy xong; trợ lý sẽ đọc offline_network_check.txt trong thư mục dự án.
+
+Kiểm tra thành công không đồng nghĩa đã cho phép nạp FPGA. Trước khi nạp thực tế phải kết nối lại Wi-Fi router, kiểm tra lại đường quản trị đang hoạt động và duyệt bước thay image riêng. Nếu Wi-Fi router không có Internet, cần lên kế hoạch riêng để vẫn giữ được đường khôi phục trong lúc thao tác.

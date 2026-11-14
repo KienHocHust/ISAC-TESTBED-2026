@@ -1,0 +1,586 @@
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+[INFO] [B200] Asking for clock rate 51.200000 MHz... 
+[INFO] [B200] Actually got clock rate 51.200000 MHz.
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.3.102,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+ACTUAL: TX 200000.0 S/s gain 30.0 dB; RX 199999.99937668347 S/s gain 60.0 dB
+[INFO] [B200] Asking for clock rate 51.200000 MHz... 
+[INFO] [B200] OK
+[INFO] [B200] Asking for clock rate 51.200000 MHz... 
+[INFO] [B200] OK
+[WARNING] [AD936X] Selected Rx sample rate (0.2 MHz) is less than
+analog frontend filter bandwidth (0.2 MHz).
+[WARNING] [0/Radio#0] Attempting to set tick rate to 0. Skipping.
+packet_headerparser_b :info: Detected an invalid packet at item 0
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 48
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 96
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 144
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 192
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 240
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 288
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 336
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 384
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 432
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 480
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 528
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 576
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 624
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 672
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 720
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 768
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 816
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 864
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 912
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 960
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1008
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1056
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1104
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1152
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1200
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1248
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1296
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1344
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1392
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1440
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1488
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1536
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1584
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1632
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1680
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1728
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1776
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1824
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1872
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1920
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1968
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2016
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2064
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2112
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2160
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2208
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2256
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2304
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2352
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2400
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2448
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2496
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2544
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2592
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2640
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2688
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2736
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2784
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2832
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2880
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2928
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2976
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3024
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3072
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3120
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3168
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3216
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3264
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3312
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3360
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3408
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3456
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3504
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3552
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3600
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3648
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3696
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3744
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3792
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3840
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3888
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3936
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 3984
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4032
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4080
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4128
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4176
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4224
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4272
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4320
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4368
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4416
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4464
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4512
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4560
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4608
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4656
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4704
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4752
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4800
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4848
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4896
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4944
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 4992
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5040
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5088
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5136
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5184
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5232
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5280
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5328
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5376
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5424
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5472
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5520
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5568
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5616
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5664
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5712
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5760
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5808
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5856
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5904
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 5952
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6000
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6048
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6096
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6144
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6192
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6240
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6288
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6336
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6384
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6432
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6480
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6528
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6576
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6624
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6672
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6720
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6768
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6816
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6864
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6912
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 6960
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7008
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7056
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7104
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7152
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7200
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7248
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7296
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7344
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7392
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7440
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7488
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7536
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7584
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7632
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7680
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7728
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7776
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7824
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7872
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7920
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 7968
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8016
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8064
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8112
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8160
+header_payload_demux :info: Parser returned #f
+TX enabled: known OFDM payload, no added noise.
+packet_headerparser_b :info: Detected an invalid packet at item 8208
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8256
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8304
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8352
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8400
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8448
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8496
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8544
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8592
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8640
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8688
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8736
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8784
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8832
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8880
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8928
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 8976
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9024
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9072
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9120
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9168
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9216
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9264
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9312
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9360
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9408
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9456
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9504
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9552
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9600
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9648
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9696
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9744
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9792
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9840
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9888
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9936
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 9984
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10032
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10080
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10128
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10176
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10224
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10272
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10320
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10368
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10416
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10464
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10512
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10560
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10608
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10656
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10704
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10752
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10800
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10848
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10896
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10944
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 10992
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11040
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11088
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11136
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11184
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11232
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11280
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11328
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11376
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11424
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11472
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11520
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11568
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11616
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11664
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11712
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11760
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11808
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11856
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11904
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 11952
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12000
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12048
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12096
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12144
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12192
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12240
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12288
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12336
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12384
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12432
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12480
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12528
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12576
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12624
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12672
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12720
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12768
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12816
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12864
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 12912
+header_payload_demux :info: Parser returned #f
+thread_body_wrapper :error: ERROR thread[thread-per-block[33]: <block header_payload_demux(34)>]: Buffer too small for min_noutput_items
+{
+  "passed": false,
+  "bytes": 0,
+  "matched": 0,
+  "unexpected": 0,
+  "partial_bytes": 0,
+  "rx_gain": 60,
+  "tx_gain": 30,
+  "rate": 200000,
+  "tx_observed_sps": 199601.7849003161,
+  "rx_observed_sps": 26919.30915560922,
+  "rx_offset_hz": 11400.0,
+  "tx_scale": 0.0078125,
+  "payload_bps": 1,
+  "sync_threshold": 0.3,
+  "expected_payload": "HELLO N321 -> B210, OFDM AWGN TEST                              ",
+  "note": "CRC-passed decoded payloads only; not a BER/PER measurement."
+}

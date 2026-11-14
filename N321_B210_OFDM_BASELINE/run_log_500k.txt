@@ -1,0 +1,52 @@
+QSocketNotifier: Can only be used with threads started with QThread
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+[INFO] [B200] Asking for clock rate 32.000000 MHz... 
+[INFO] [B200] Actually got clock rate 32.000000 MHz.
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.180.3,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+[WARNING] [0/Radio#0] Attempting to set tick rate to 0. Skipping.
+packet_headerparser_b :info: Detected an invalid packet at item 0
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 48
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 96
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 144
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 192
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 240
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 288
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 336
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 384
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 432
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 480
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 528
+header_payload_demux :info: Parser returned #f

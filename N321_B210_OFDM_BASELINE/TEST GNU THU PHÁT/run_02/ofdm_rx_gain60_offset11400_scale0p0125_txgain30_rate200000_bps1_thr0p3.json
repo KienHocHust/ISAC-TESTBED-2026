@@ -1,0 +1,20 @@
+{
+  "passed": false,
+  "bytes": 448,
+  "matched": 7,
+  "unexpected": 0,
+  "partial_bytes": 0,
+  "rx_gain": 60,
+  "tx_gain": 30,
+  "rate": 200000,
+  "tx_observed_sps": 199625.73044187817,
+  "rx_observed_sps": 200145.77951679347,
+  "rx_offset_hz": 11400.0,
+  "tx_scale": 0.0125,
+  "payload_bps": 1,
+  "sync_threshold": 0.3,
+  "accepted_headers": 548,
+  "rejected_headers": 1193,
+  "expected_payload": " HELLO KI\u00caN TR\u1ea6N \u0110\u00c3 L\u00c0M \u0110\u01af\u1ee2C                          ",
+  "note": "CRC-passed decoded payloads only; not a BER/PER measurement."
+}

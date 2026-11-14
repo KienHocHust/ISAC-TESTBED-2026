@@ -1,0 +1,9 @@
+{
+  "backup_directory": "/data/isac_image_trial_20261114/original_d774fd78",
+  "verified_files": {
+    "n320.bin": "d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3",
+    "n320.dts": "75a0db4c853a1e9a458b56fe8b6f54875e5fa208eb40c793148bd130e349f9cf",
+    "n320.dtbo": "cd3d780515d78a081a4b12e1e0741bf9b7ae795dbc3f7b7e9c344c4cf801694d"
+  },
+  "firmware_files_modified": false
+}

@@ -1,0 +1,121 @@
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.180.3,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.180.3,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-0.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-1.init.LMK04828] LMK initialized and locked!
+[INFO] [MPM.Rhodium-0.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-0.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-0.init] JESD204B Link Initialization & Training Complete
+[INFO] [MPM.Rhodium-1.DAC37J82] DAC PLL Locked!
+[INFO] [MPM.Rhodium-1.AD9695] ADC PLL Locked!
+[INFO] [MPM.Rhodium-1.init] JESD204B Link Initialization & Training Complete
+  _____________________________________________________
+ /
+|       Device: N300-Series Device
+|     _____________________________________________________
+|    /
+|   |       Mboard: ni-n3xx-3258433
+|   |   dboard_0_pid: 338
+|   |   dboard_0_serial: 3254209
+|   |   dboard_1_pid: 338
+|   |   dboard_1_serial: 3254215
+|   |   eeprom_version: 3
+|   |   fs_version: 20250128151101
+|   |   mender_artifact: v4.8.0.0_n3xx
+|   |   mpm_sw_version: 4.8.0.0-g308126a4
+|   |   pid: 16962
+|   |   product: n320
+|   |   rev: 10
+|   |   rpc_connection: remote
+|   |   serial: 3258433
+|   |   type: n3xx
+|   |   MPM Version: 5.3
+|   |   FPGA Version: 8.2
+|   |   FPGA git hash: fffffff.dirty
+|   |   RFNoC capable: Yes
+|   |   
+|   |   Time sources:  internal, external, gpsdo, sfp0
+|   |   Clock sources: external, internal, gpsdo
+|   |   Sensors: ref_locked, gps_locked, temp, fan, gps_gpgga, gps_sky, gps_time, gps_tpv
+|     _____________________________________________________
+|    /
+|   |       RFNoC blocks on this device:
+|   |   
+|   |   * 0/DDC#0
+|   |   * 0/DDC#1
+|   |   * 0/DUC#0
+|   |   * 0/DUC#1
+|   |   * 0/Radio#0
+|   |   * 0/Radio#1
+|   |   * 0/Replay#0
+|     _____________________________________________________
+|    /
+|   |       Static connections on this device:
+|   |   
+|   |   * 0/SEP#0:0==>0/DUC#0:0
+|   |   * 0/DUC#0:0==>0/Radio#0:0
+|   |   * 0/Radio#0:0==>0/DDC#0:0
+|   |   * 0/DDC#0:0==>0/SEP#0:0
+|   |   * 0/SEP#1:0==>0/DUC#1:0
+|   |   * 0/DUC#1:0==>0/Radio#1:0
+|   |   * 0/Radio#1:0==>0/DDC#1:0
+|   |   * 0/DDC#1:0==>0/SEP#1:0
+|   |   * 0/SEP#2:0==>0/Replay#0:0
+|   |   * 0/Replay#0:0==>0/SEP#2:0
+|   |   * 0/SEP#3:0==>0/Replay#0:1
+|   |   * 0/Replay#0:1==>0/SEP#3:0
+|     _____________________________________________________
+|    /
+|   |       TX Dboard: 0/Radio#0
+|   |     _____________________________________________________
+|   |    /
+|   |   |       TX Frontend: 0
+|   |   |   Name: Rhodium
+|   |   |   Antennas: TX/RX, CAL, TERM
+|   |   |   Freq range: 1.000 to 6000.000 MHz
+|   |   |   Gain range all: 0.0 to 60.0 step 1.0 dB
+|   |   |   Bandwidth range: 250000000.0 to 250000000.0 step 0.0 Hz
+|   |   |   Connection Type: 
+|   |   |   Uses LO offset: No
+|     _____________________________________________________
+|    /
+|   |       RX Dboard: 0/Radio#0
+|   |     _____________________________________________________
+|   |    /
+|   |   |       RX Frontend: 0
+|   |   |   Name: Rhodium
+|   |   |   Antennas: TX/RX, RX2, CAL, TERM
+|   |   |   Freq range: 1.000 to 6000.000 MHz
+|   |   |   Gain range all: 0.0 to 60.0 step 1.0 dB
+|   |   |   Bandwidth range: 250000000.0 to 250000000.0 step 0.0 Hz
+|   |   |   Connection Type: 
+|   |   |   Uses LO offset: No
+|     _____________________________________________________
+|    /
+|   |       TX Dboard: 0/Radio#1
+|   |     _____________________________________________________
+|   |    /
+|   |   |       TX Frontend: 0
+|   |   |   Name: Rhodium
+|   |   |   Antennas: TX/RX, CAL, TERM
+|   |   |   Freq range: 1.000 to 6000.000 MHz
+|   |   |   Gain range all: 0.0 to 60.0 step 1.0 dB
+|   |   |   Bandwidth range: 250000000.0 to 250000000.0 step 0.0 Hz
+|   |   |   Connection Type: 
+|   |   |   Uses LO offset: No
+|     _____________________________________________________
+|    /
+|   |       RX Dboard: 0/Radio#1
+|   |     _____________________________________________________
+|   |    /
+|   |   |       RX Frontend: 0
+|   |   |   Name: Rhodium
+|   |   |   Antennas: TX/RX, RX2, CAL, TERM
+|   |   |   Freq range: 1.000 to 6000.000 MHz
+|   |   |   Gain range all: 0.0 to 60.0 step 1.0 dB
+|   |   |   Bandwidth range: 250000000.0 to 250000000.0 step 0.0 Hz
+|   |   |   Connection Type: 
+|   |   |   Uses LO offset: No
+

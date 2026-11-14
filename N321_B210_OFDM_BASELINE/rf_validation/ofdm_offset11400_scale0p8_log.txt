@@ -1,0 +1,127 @@
+[INFO] [UHD] linux; GNU C++ version 15.2.0; Boost_109000; UHD_4.9.0.1-1ubuntu1
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+[INFO] [B200] Asking for clock rate 32.000000 MHz... 
+[INFO] [B200] Actually got clock rate 32.000000 MHz.
+[INFO] [MPMD] Initializing 1 device(s) in parallel with args: mgmt_addr=192.168.3.102,type=n3xx,product=n320,serial=3258433,name=ni-n3xx-3258433,fpga=HG,claimed=False,addr=192.168.180.3,master_clock_rate=200e6
+[INFO] [MPM.PeriphManager] init() called with device args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'.
+ACTUAL: TX 500000.0 S/s gain 10.0 dB; RX 500000.0 S/s gain 60.0 dB
+[WARNING] [0/Radio#0] Attempting to set tick rate to 0. Skipping.
+packet_headerparser_b :info: Detected an invalid packet at item 0
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 48
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 96
+header_payload_demux :info: Parser returned #f
+[INFO] [MPM.Rhodium-0] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+[INFO] [MPM.Rhodium-1] init() called with args `fpga=HG,master_clock_rate=200e6,mgmt_addr=192.168.3.102,name=ni-n3xx-3258433,product=n320,clock_source=internal,time_source=internal'
+packet_headerparser_b :info: Detected an invalid packet at item 144
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 192
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 240
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 288
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 336
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 384
+header_payload_demux :info: Parser returned #f
+TX enabled: known OFDM payload, no added noise.
+packet_headerparser_b :info: Detected an invalid packet at item 432
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 480
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 528
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 576
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 624
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 672
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 720
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 768
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 816
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 864
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 912
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 960
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1008
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1056
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1104
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1152
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1200
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1248
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1296
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1344
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1392
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1440
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1488
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1536
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1584
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1632
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1680
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1728
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1776
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1824
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1872
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1920
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 1968
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2016
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2064
+header_payload_demux :info: Parser returned #f
+packet_headerparser_b :info: Detected an invalid packet at item 2112
+header_payload_demux :info: Parser returned #f
+{
+  "passed": false,
+  "bytes": 0,
+  "matched": 0,
+  "unexpected": 0,
+  "partial_bytes": 0,
+  "rx_gain": 60,
+  "tx_gain": 10,
+  "rate": 500000,
+  "tx_observed_sps": 499020.04923003464,
+  "rx_observed_sps": 499939.7121525458,
+  "rx_offset_hz": 11400.0,
+  "tx_scale": 0.8,
+  "expected_payload": "HELLO N321 -> B210, OFDM AWGN TEST                              ",
+  "note": "CRC-passed decoded payloads only; not a BER/PER measurement."
+}

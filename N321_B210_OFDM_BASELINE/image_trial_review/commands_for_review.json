@@ -1,0 +1,31 @@
+{
+  "status": "REVIEW ONLY; management SSH verified; original image backed up locally and on device; awaiting explicit image-load approval",
+  "apply_stock48": [
+    "env",
+    "LD_LIBRARY_PATH=/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/uhd48_check/root/usr/lib/x86_64-linux-gnu",
+    "/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/uhd48_check/root/usr/bin/uhd_image_loader",
+    "--no-fw",
+    "--args",
+    "type=n3xx,addr=192.168.180.3,mgmt_addr=192.168.3.102,fpga=HG",
+    "--fpga-path",
+    "/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/image_trial_review/stock48/usrp_n320_fpga_HG.bit"
+  ],
+  "restore_original_via_mpm": [
+    "env",
+    "LD_LIBRARY_PATH=/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/uhd48_check/root/usr/lib/x86_64-linux-gnu",
+    "/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/uhd48_check/root/usr/bin/uhd_image_loader",
+    "--no-fw",
+    "--args",
+    "type=n3xx,addr=192.168.180.3,mgmt_addr=192.168.3.102,fpga=HG",
+    "--fpga-path",
+    "/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/image_trial_review/restore_original/usrp_n320_fpga_HG.bin"
+  ],
+  "recovery_if_mpm_unavailable": "Through verified independent SSH/console: restore the exact original n320.bin, n320.dts, n320.dtbo from backup, verify SHA256, then reload/reboot only after separate authorization.",
+  "verified_management": {
+    "ip": "192.168.3.102",
+    "hostname": "ni-n3xx-3258433",
+    "wifi": "MINHDZ",
+    "laptop_ip": "192.168.3.134",
+    "device_backup_directory": "/data/isac_image_trial_20261114/original_d774fd78"
+  }
+}

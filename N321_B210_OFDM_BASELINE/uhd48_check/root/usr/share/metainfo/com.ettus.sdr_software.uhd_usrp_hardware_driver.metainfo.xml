@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <id>com.ettus.sdr_software.uhd_usrp_hardware_driver</id>
+  <metadata_license>MIT</metadata_license>
+  <name>uhd-host</name>
+  <summary>universal hardware driver for Ettus Research products - host apps</summary>
+  <description>
+    <p>Host utilities for the Universal Hardware Driver for Ettus
+    Research products.</p>
+
+    <p>The supported devices provide analog radio receiver and
+    transmitter hardware along with digital interfaces for getting
+    signals to and from a software defined radio running on the host
+    computer.</p>
+
+    <p>This package includes the uhd_find_devices application to
+    locate and configure attached peripherals, the uhd_usrp_probe
+    application to display hardware configuration information and
+    Doxygen generated documentation.</p>
+  </description>
+  <url type="homepage">https://www.ettus.com/sdr-software/uhd-usrp-hardware-driver/</url>
+  <provides>
+    <modalias>usb:vFFFEp0002d*</modalias>
+    <modalias>usb:v2500p0002d*</modalias>
+    <modalias>usb:v2500p0020d*</modalias>
+    <modalias>usb:v2500p0021d*</modalias>
+    <modalias>usb:v3923p7813d*</modalias>
+    <modalias>usb:v3923p7814d*</modalias>
+  </provides>
+</component>

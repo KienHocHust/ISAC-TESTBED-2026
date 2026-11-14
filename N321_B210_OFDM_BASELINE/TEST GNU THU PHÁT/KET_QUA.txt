@@ -1,0 +1,15 @@
+ĐÃ NHẬN ĐÚNG QUA RF
+
+Câu phát (giữ nguyên khoảng trắng hai đầu):
+' HELLO KIÊN TRẦN ĐÃ LÀM ĐƯỢC '
+
+Lượt run_02 bật dữ liệu 8 giây: thu 7 gói, cả 7 qua CRC và khớp đủ 64 byte, không có byte lẻ.
+Dữ liệu gốc UTF-8 dài 39 byte, thêm đệm khoảng trắng đến 64 byte.
+Chưa thêm nhiễu nhân tạo. TX gain 30 dB, RX gain 60 dB, 2,45 GHz, 200 kS/s, BPSK.
+passed=false vì tiêu chí script yêu cầu tối thiểu 10 gói; 7 gói đã thu đều đúng. Đường RF chưa ổn định.
+Lượt run_01 đã dừng RF nhưng bộ báo cáo gặp lỗi ASCII; đã sửa UTF-8 trước run_02. Không dùng run_01 để kết luận số gói.
+
+RX_MESSAGES.txt: bản chữ của dữ liệu thực thu, đã kiểm tra từng byte với câu phát.
+run_02.log: log RF. run_02/*.bin: byte payload thực thu; *.json: báo cáo; *.c64: IQ.
+TEST_GNU_THU_PHAT.grc đã biên dịch thành công sang test_gnu_thu_phat.py; GUI chưa được chạy trong lần thử này.
+Hai lượt tự động đều đã dừng streaming.

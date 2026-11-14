@@ -1,0 +1,39 @@
+PHƯƠNG ÁN THỬ IMAGE CHUẨN UHD 4.8 VÀ KHÔI PHỤC — CHƯA THỰC HIỆN
+
+Mục đích
+Kiểm tra image HG chuẩn có khôi phục đúng luồng mẫu 500 kS/s hay không. Image chuẩn chưa được chứng minh sẽ sửa lỗi. Đây không phải thay đổi chỉ có hiệu lực trong RAM: loader ghi image vào filesystem N321; image mới có thể tiếp tục được dùng sau reboot cho đến khi chủ động khôi phục.
+
+Thiết bị và phạm vi
+N321 vỏ máy, UHD nhận product n320, serial 3258433. SFP0 192.168.180.3. Dùng bộ loader UHD 4.8 riêng, image n320 HG (SFP0 1 GbE). Không nâng cấp OS/MPM, không sửa EEPROM, IP, mã nguồn FPGA hay bảng hiệu chuẩn. Việc thử sẽ thay bitstream đang hoạt động và có thể làm chức năng riêng của thiết kế cũ không còn hoạt động trong thời gian thử.
+
+File đã chuẩn bị
+- stock48/usrp_n320_fpga_HG.bit và .dts: từ gói Ettus 4.8 có SHA256 khớp manifest.
+- restore_original/usrp_n320_fpga_HG.bin, .dts, .dtbo: trích đúng từng byte từ bản sao lưu trước thay đổi.
+- SHA256.json: checksum từng file; đã kiểm tra bản khôi phục .bin khớp d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3.
+- commands_for_review.json: tham số lệnh dự kiến, không phải script tự chạy.
+- device_backup/n321_before_changes.tar: bản sao lưu ban đầu vẫn được giữ ở thư mục cha.
+
+Điều kiện trước khi xin phép nạp
+1. Dừng tất cả flowgraph/streaming, xác nhận đúng serial và checksum image hiện tại chưa bị ai thay đổi kể từ lúc sao lưu.
+2. Có nguồn điện ổn định.
+3. Thiết lập và THỬ THÀNH CÔNG đường quản trị độc lập qua RJ45 eth0 hoặc USB serial console. Hiện trạng đọc được: SFP0 up, eth0 down, SFP1 down. Không coi bản sao lưu trên laptop là đủ nếu chưa có đường truy cập để khôi phục.
+4. Lưu thêm bản sao trên thiết bị và kiểm tra dung lượng, quyền đọc, checksum trước khi thay image. Bước này chưa làm trong giai đoạn chuẩn bị trên laptop.
+5. Chỉ sau khi các điều kiện trên đạt mới xin người dùng duyệt lệnh nạp cụ thể; chưa có chấp thuận nạp trong lựa chọn chuẩn bị phương án này.
+
+Trình tự dự kiến sau khi được duyệt
+A. Nạp HG chuẩn 4.8 bằng loader UHD 4.8, --no-fw và --fpga-path trỏ chính xác file .bit đã kiểm tra; loader tìm .dts cùng tên. Không dùng lệnh chọn image mặc định theo cache.
+B. SFP sẽ ngắt tạm thời khi reload FPGA. Theo dõi qua quản trị độc lập, đối chiếu checksum .bin/.dts sau cập nhật và probe. Nếu mạng SFP hoặc MPM không lên bình thường, dừng thử và khôi phục.
+C. Chỉ thu: benchmark 500 kS/s, master clock 200 MHz, mỗi lần 5 giây, tối đa 3 lần. Mục tiêu khoảng 2.5 triệu mẫu/lần (cho phép +/-5% do biên thời gian), không dropped/overrun/sequence error. So với kết quả cũ 312.929 mẫu/lần. Đây là tiêu chí đánh giá, không phải kết quả đã đạt.
+D. Nếu cả ba lần đạt, báo kết quả rồi mới quyết định chạy tone/OFDM. Không phát RF trong phép thử image và RX benchmark. Không tự giữ image mới lâu dài: việc giữ hay khôi phục phải được người dùng lựa chọn.
+
+Điều kiện khôi phục
+- Không truy cập được thiết bị/stream sau reload, probe lỗi, benchmark vẫn thiếu gần 8 lần, hoặc người dùng yêu cầu trở lại thiết kế cũ.
+- Nếu MPM còn hoạt động: loader nạp lại file .bin nguyên gốc và .dts đi kèm qua đường quản trị đã kiểm tra.
+- Nếu MPM không hoạt động nhưng SSH/console còn: khôi phục chính xác ba file /lib/firmware/n320.bin, n320.dts và n320.dtbo bằng bản sao lưu, xác minh checksum, sau đó reload/reboot theo quyền đã được duyệt.
+- Xác minh lại image .bin và .dts khớp bản gốc, probe hoạt động và cấu hình mạng giữ nguyên. Nếu loader biên dịch lại .dtbo khác checksum, khôi phục thêm file .dtbo gốc qua đường quản trị. Không hứa tự khôi phục được nếu không có đường quản trị độc lập.
+
+Nguồn đối chiếu
+https://files.ettus.com/manual_archive/v4.8.0.0/html/page_usrp_n3xx.html (Updating the FPGA)
+https://raw.githubusercontent.com/EttusResearch/uhd/v4.8.0.0/host/lib/usrp/mpmd/mpmd_image_loader.cpp (file .dts được tìm theo tên .bit/.bin)
+
+Trạng thái hiện tại: chỉ chuẩn bị và kiểm tra file trên laptop; chưa tải image lên N321, chưa nạp/reboot, chưa ghi backup mới lên thiết bị trong bước này.

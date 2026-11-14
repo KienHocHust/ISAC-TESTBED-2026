@@ -1,0 +1,10 @@
+{
+  "hostname": "ni-n3xx-3258433",
+  "sha256": {
+    "bin": "64c323e17c2fb80797072d6c6c64ad09b06c212636c10d420876742e86e9ea43",
+    "dts": "75a0db4c853a1e9a458b56fe8b6f54875e5fa208eb40c793148bd130e349f9cf",
+    "dtbo": "cd3d780515d78a081a4b12e1e0741bf9b7ae795dbc3f7b7e9c344c4cf801694d"
+  },
+  "eth0": "up",
+  "sfp0": "up"
+}

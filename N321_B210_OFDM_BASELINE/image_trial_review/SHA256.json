@@ -1,0 +1,7 @@
+{
+  "stock48/usrp_n320_fpga_HG.dts": "75a0db4c853a1e9a458b56fe8b6f54875e5fa208eb40c793148bd130e349f9cf",
+  "stock48/usrp_n320_fpga_HG.bit": "6778eb0b8edc69bfc1650f742c9037328ea5d8737390317b842fa53dd3e67ec7",
+  "restore_original/usrp_n320_fpga_HG.dts": "75a0db4c853a1e9a458b56fe8b6f54875e5fa208eb40c793148bd130e349f9cf",
+  "restore_original/usrp_n320_fpga_HG.bin": "d774fd789befbaa7a870a292cc236a6a91b7721a0c92e676aac04ada2539eea3",
+  "restore_original/usrp_n320_fpga_HG.dtbo": "cd3d780515d78a081a4b12e1e0741bf9b7ae795dbc3f7b7e9c344c4cf801694d"
+}

@@ -1,3 +1,8 @@
+# Only publish the Baseline project from this workspace
+/*
+!/.gitignore
+!/N321_B210_OFDM_BASELINE/
+
 # Local application settings and credentials
 .agents/
 .aws/

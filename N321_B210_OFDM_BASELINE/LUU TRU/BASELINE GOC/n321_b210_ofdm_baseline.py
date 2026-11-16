@@ -233,7 +233,7 @@ class n321_b210_ofdm_baseline(gr.top_block, Qt.QWidget):
         self.blocks_stream_to_tagged_stream_0 = blocks.stream_to_tagged_stream(gr.sizeof_char, 1, packet_len, len_tag_key)
         self.blocks_multiply_const_vxx_0_1 = blocks.multiply_const_cc(tx_enable)
         self.blocks_multiply_const_vxx_0_0 = blocks.multiply_const_cc(tx_scale)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, 'rx_payload.bin', False)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/keindeptrai/Desktop/ISAC TESTBED/N321_B210_OFDM_BASELINE/BASELINE GOC/rx_payload.bin', False)
         self.blocks_file_sink_0.set_unbuffered(True)
 
 

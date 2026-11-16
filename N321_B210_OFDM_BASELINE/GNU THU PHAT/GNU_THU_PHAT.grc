@@ -5,8 +5,8 @@ options:
     catch_exceptions: 'True'
     comment: ''
     copyright: ''
-    description: "RX NOISE version: B210 \u2192 Add \u2190 Gaussian Noise; Add \u2192\
-      \ OFDM RX. noise_amp=0 by default."
+    description: UTF-8 OFDM BPSK RF test, no synthetic noise. Enable TX DATA to transmit.
+      Stop to release devices.
     gen_linking: dynamic
     generate_options: qt_gui
     generator_class_name: PythonQtGuiGenerator
@@ -20,7 +20,7 @@ options:
     run: 'True'
     run_command: '{python} -u {filename}'
     thread_safe_setters: ''
-    title: "GNU THU PHAT | RX NOISE | N321 \u2192 B210"
+    title: "GNU THU PHAT | N321 \u2192 B210 | UTF-8 OFDM"
   states:
     bus_sink: false
     bus_source: false
@@ -34,7 +34,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '2450000000'
+    value: '2500000000'
   states:
     bus_sink: false
     bus_source: false
@@ -76,27 +76,6 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [688, 12]
-    rotation: 0
-    state: enabled
-- name: noise_amp
-  id: variable_qtgui_range
-  parameters:
-    comment: Software Gaussian noise, linear IQ amplitude; not dB.
-    gui_hint: ''
-    label: RX NOISE amplitude (0 = off)
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '0'
-    step: '0.0001'
-    stop: '0.01'
-    value: '0'
-    widget: counter_slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1624, 16]
     rotation: 0
     state: enabled
 - name: packet_len
@@ -160,7 +139,7 @@ blocks:
   id: variable
   parameters:
     comment: 'RF diagnostic trial: TX gain 10 dB; RX gain remains 20 dB.'
-    value: '30'
+    value: '45'
   states:
     bus_sink: false
     bus_source: false
@@ -181,43 +160,6 @@ blocks:
     coordinate: [1232, 12]
     rotation: 0
     state: enabled
-- name: analog_noise_source_rx
-  id: analog_noise_source_x
-  parameters:
-    affinity: ''
-    alias: ''
-    amp: noise_amp
-    comment: 'RX NOISE: Gaussian noise added in software'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    noise_type: analog.GR_GAUSSIAN
-    seed: '0'
-    type: complex
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [80, 800]
-    rotation: 0
-    state: enabled
-- name: blocks_add_rx_noise
-  id: blocks_add_xx
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: B210 IQ + Gaussian noise
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    num_inputs: '2'
-    type: complex
-    vlen: '1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [376, 568]
-    rotation: 0
-    state: enabled
 - name: blocks_file_sink_0
   id: blocks_file_sink
   parameters:
@@ -233,7 +175,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 464]
+    coordinate: [792, 456.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -307,7 +249,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 688]
+    coordinate: [808, 696.0]
     rotation: 0
     state: enabled
 - name: blocks_vector_source_x_0
@@ -318,7 +260,7 @@ blocks:
     comment: UTF-8 payload, 64 bytes with padding.
     maxoutbuf: '0'
     minoutbuf: '0'
-    repeat: 'True'
+    repeat: 'False'
     tags: ()
     type: byte
     vector: list(encode_payload(message_text, packet_len))
@@ -344,7 +286,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 512]
+    coordinate: [424, 492.0]
     rotation: 0
     state: enabled
 - name: digital_ofdm_tx_0
@@ -412,7 +354,7 @@ blocks:
     grid: 'False'
     gui_hint: ''
     label: Relative Gain
-    label1: RX IQ + Gaussian noise
+    label1: RX IQ
     label10: ''
     label2: ''
     label3: ''
@@ -425,7 +367,7 @@ blocks:
     legend: 'True'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"RX NOISE: B210 + Gaussian (Before OFDM RX)"'
+    name: '"B210 RF Input (Before OFDM RX)"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'True'
@@ -453,7 +395,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 816]
+    coordinate: [440, 736.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -1252,9 +1194,6 @@ blocks:
     state: enabled
 
 connections:
-- [analog_noise_source_rx, '0', blocks_add_rx_noise, '1']
-- [blocks_add_rx_noise, '0', digital_ofdm_rx_0, '0']
-- [blocks_add_rx_noise, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_multiply_const_vxx_0_0, '0', blocks_multiply_const_vxx_0_1, '0']
 - [blocks_multiply_const_vxx_0_1, '0', qtgui_freq_sink_x_0_0, '0']
 - [blocks_multiply_const_vxx_0_1, '0', uhd_usrp_sink_0, '0']
@@ -1263,7 +1202,8 @@ connections:
 - [digital_ofdm_rx_0, '0', blocks_file_sink_0, '0']
 - [digital_ofdm_rx_0, '0', blocks_tag_debug_0, '0']
 - [digital_ofdm_tx_0, '0', blocks_multiply_const_vxx_0_0, '0']
-- [uhd_usrp_source_0, '0', blocks_add_rx_noise, '0']
+- [uhd_usrp_source_0, '0', digital_ofdm_rx_0, '0']
+- [uhd_usrp_source_0, '0', qtgui_freq_sink_x_0, '0']
 
 metadata:
   file_format: 1

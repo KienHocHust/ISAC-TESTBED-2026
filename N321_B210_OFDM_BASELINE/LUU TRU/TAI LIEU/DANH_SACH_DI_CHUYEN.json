@@ -1,0 +1,217 @@
+[
+  {
+    "old": "validate_ofdm_rf.py",
+    "new": "BASELINE GOC/validate_ofdm_rf.py",
+    "sha256_before_edit": "f57410d73659f2d925c23618e6ee7647aa916f14632e0b071e1cc1770a2bda05"
+  },
+  {
+    "old": "diagnose_rf.py",
+    "new": "CHAN DOAN/diagnose_rf.py",
+    "sha256_before_edit": "0c8721566932113a055d244d4f8b8db030364cec5a94f29a41514cd96ea21b75"
+  },
+  {
+    "old": "diagnose_n321_internal.py",
+    "new": "CHAN DOAN/diagnose_n321_internal.py",
+    "sha256_before_edit": "daa7124f7785d90aed0cdbef8dfa1b0070151a5092e9fccf077f026d888d56d5"
+  },
+  {
+    "old": "CHAY_LAI_RF.md",
+    "new": "TAI LIEU/CHAY_LAI_RF.md",
+    "sha256_before_edit": "0e6bfab03fee0a822a116a6762315ff5540823952aabb1e38c83a7dfef82a8a0"
+  },
+  {
+    "old": "diagnose_n321_internal_results.json",
+    "new": "CHAN DOAN/diagnose_n321_internal_results.json",
+    "sha256_before_edit": "40f660083aa13a223ab10a79140238432dd7ec87c1670c0089ca31764397223d"
+  },
+  {
+    "old": "offline_decode_iq.py",
+    "new": "BASELINE GOC/offline_decode_iq.py",
+    "sha256_before_edit": "cb24f08f4564dc8755a7a1cd1459c8da90dfe980c469c0b0246c6e2a80103a14"
+  },
+  {
+    "old": "diagnose_rf_factor8_log.txt",
+    "new": "CHAN DOAN/diagnose_rf_factor8_log.txt",
+    "sha256_before_edit": "ca583580278136d9d39cf63d067af8aa5928d17fb66b59b0fc03e5e44c20c71e"
+  },
+  {
+    "old": "loopback_payload.bin",
+    "new": "BASELINE GOC/loopback_payload.bin",
+    "sha256_before_edit": "ce1fa2b9cbd70126114f7e5696780d246b0cd26a0b21c0018c05324a32746cb3"
+  },
+  {
+    "old": "HUONG_DAN.md",
+    "new": "TAI LIEU/HUONG_DAN.md",
+    "sha256_before_edit": "225786e0209790c66b7fa9150fd41978e7b9f700f3be89172821b2cb76fc9cad"
+  },
+  {
+    "old": "diagnose_rf_factor8_results.json",
+    "new": "CHAN DOAN/diagnose_rf_factor8_results.json",
+    "sha256_before_edit": "2e7ed2d8a86594b8591f1446e9f7640837ec67f9b3645fd98ca7dd69bf50eb8f"
+  },
+  {
+    "old": "run_ofdm_rf_baseline.sh",
+    "new": "BASELINE GOC/run_ofdm_rf_baseline.sh",
+    "sha256_before_edit": "f4133dae0ff04724944d81aecd4bf11666db3f1a304b407a8ff92922519b052e"
+  },
+  {
+    "old": "rx_payload.bin",
+    "new": "BASELINE GOC/rx_payload.bin",
+    "sha256_before_edit": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "old": "n321_probe_verified.txt",
+    "new": "CHAN DOAN/n321_probe_verified.txt",
+    "sha256_before_edit": "251f36bc1731f578a37726c03c4d3b5450b3feb9d8ea395303da86315550bd20"
+  },
+  {
+    "old": "n321_b210_rf_tone_check.py",
+    "new": "BASELINE GOC/n321_b210_rf_tone_check.py",
+    "sha256_before_edit": "9872f2401614772b98d78b5f27bb943b251cc0eabceaa606076303d4c8278452"
+  },
+  {
+    "old": "run_log.txt",
+    "new": "CHAN DOAN/run_log.txt",
+    "sha256_before_edit": "4cb6c47907ad2a3dca1a7ea33417c7452184c445de04d068162a11238a716558"
+  },
+  {
+    "old": "n321_b210_ofdm_baseline.py",
+    "new": "BASELINE GOC/n321_b210_ofdm_baseline.py",
+    "sha256_before_edit": "7b8aa735d290a549c6d4b6cf22e1c036ba3f77f0fff4bf3c7c81cda7bde6801b"
+  },
+  {
+    "old": "test_loopback.py",
+    "new": "BASELINE GOC/test_loopback.py",
+    "sha256_before_edit": "212fb5ade0af02212af430e6191c917ec16acc782e0d4f0f237644e9b580c205"
+  },
+  {
+    "old": "check_rx.py",
+    "new": "BASELINE GOC/check_rx.py",
+    "sha256_before_edit": "5290ae10e7b60010e49cfc8405471fe2594423d839c737febdf5f73880d6ed58"
+  },
+  {
+    "old": "n321_property_tree.txt",
+    "new": "CHAN DOAN/n321_property_tree.txt",
+    "sha256_before_edit": "f27aaa65800a1e44358cf1e5c82b862aefdd1bb8454217340bd0387ffcd9f29d"
+  },
+  {
+    "old": "diagnose_rf_stronger_log.txt",
+    "new": "CHAN DOAN/diagnose_rf_stronger_log.txt",
+    "sha256_before_edit": "23c205cb1dd91c2bd60796951cc21a1596ae30b865ad8813f625475e60aed4bd"
+  },
+  {
+    "old": "check_rx_tx10.txt",
+    "new": "CHAN DOAN/check_rx_tx10.txt",
+    "sha256_before_edit": "d5d727b76f7f09cbdd6106dbd60f2051f0c6f53bd6cf370cebde1c712129bfd8"
+  },
+  {
+    "old": "benchmark_n321_uhd48_log.txt",
+    "new": "CHAN DOAN/benchmark_n321_uhd48_log.txt",
+    "sha256_before_edit": "19f68b65313af7150751ec5c335c6a89888445d7fbb3fc7b8c7ae2a708877490"
+  },
+  {
+    "old": "n321_rfnoc_readback.json",
+    "new": "CHAN DOAN/n321_rfnoc_readback.json",
+    "sha256_before_edit": "e5b4e546d731b4b63809320ae70e80cf0f08998813af974c3b77a3dea9cd6183"
+  },
+  {
+    "old": "run_log_tx10.txt",
+    "new": "CHAN DOAN/run_log_tx10.txt",
+    "sha256_before_edit": "08e9177ca089c0076bb9b0a55972af1fe382ee4f428ee7f8eeb238b95ba371e1"
+  },
+  {
+    "old": "benchmark_after_powercycle.txt",
+    "new": "CHAN DOAN/benchmark_after_powercycle.txt",
+    "sha256_before_edit": "a312b3f42db65a77697daaf6ee90f54970db84b56875b539661831e9df9ddc7c"
+  },
+  {
+    "old": "n321_clock_readback.json",
+    "new": "CHAN DOAN/n321_clock_readback.json",
+    "sha256_before_edit": "c9475e3cfa3d520a161fb8a0d6039ecbd9224f685cb7f595d69ff2e93999c3e6"
+  },
+  {
+    "old": "isac_ofdm_modem.py",
+    "new": "BASELINE GOC/isac_ofdm_modem.py",
+    "sha256_before_edit": "6e9ad90d932909e9a1d99610376843a848f4e76d599cb556141063a5536056c6"
+  },
+  {
+    "old": "n321_cal_tx1.c64",
+    "new": "CHAN DOAN/n321_cal_tx1.c64",
+    "sha256_before_edit": "010b6bbd29964508b22cca76e07b0165a410a220fd96e3710bbdbda9e839cd6e"
+  },
+  {
+    "old": "offline_network_check.txt",
+    "new": "CHAN DOAN/offline_network_check.txt",
+    "sha256_before_edit": "782d58ca984133582107ae77b5df82b2989d44506e298962d211806a8792a440"
+  },
+  {
+    "old": "N321_B210_RF_TONE_CHECK.grc",
+    "new": "BASELINE GOC/N321_B210_RF_TONE_CHECK.grc",
+    "sha256_before_edit": "f49cb683bea2dd03af413c1975bc6ad02835c34e4d9ed0579a625793f1e636a6"
+  },
+  {
+    "old": "N321_B210_OFDM_BASELINE.grc",
+    "new": "BASELINE GOC/N321_B210_OFDM_BASELINE.grc",
+    "sha256_before_edit": "4f86f0fdc378ba01f25f6ce80dd666b20d077bdec4e618c3db141d0a88fa56a4"
+  },
+  {
+    "old": "n321_cal_tx0.c64",
+    "new": "CHAN DOAN/n321_cal_tx0.c64",
+    "sha256_before_edit": "f8ba080aa13175b841b1348bb010d34a6e1eef0c838b3b71b99ed6d5b614ffef"
+  },
+  {
+    "old": "diagnose_rf_log.txt",
+    "new": "CHAN DOAN/diagnose_rf_log.txt",
+    "sha256_before_edit": "c0248d69cf6c8ffc96406bf76608eac07e708b3e1bcd3d425340c19ffd62e6c8"
+  },
+  {
+    "old": "diagnose_rf_stronger_results.json",
+    "new": "CHAN DOAN/diagnose_rf_stronger_results.json",
+    "sha256_before_edit": "07afd4e82e01cd31ac8756f369f8ed46b1c1cd135cfa7976102b40f89fe7e2d3"
+  },
+  {
+    "old": "run_log_compare.txt",
+    "new": "CHAN DOAN/run_log_compare.txt",
+    "sha256_before_edit": "68b5079e9867dba4a59f8908c3b2bcc9ad387769eba22d0b3347588509d3d867"
+  },
+  {
+    "old": "HUONG_DAN_KHI_DOI_WIFI.txt",
+    "new": "TAI LIEU/HUONG_DAN_KHI_DOI_WIFI.txt",
+    "sha256_before_edit": "681e33e4d6e95abb678486242c1e9333085496fabf05b7882c1370ce55e7e156"
+  },
+  {
+    "old": "diagnose_n321_internal_log.txt",
+    "new": "CHAN DOAN/diagnose_n321_internal_log.txt",
+    "sha256_before_edit": "cf57c5d998baff97bf92ec86906d7f11242486596f73ee4660fbe468ee8001de"
+  },
+  {
+    "old": "benchmark_n321_rx_log.txt",
+    "new": "CHAN DOAN/benchmark_n321_rx_log.txt",
+    "sha256_before_edit": "d2026189202875f82785b30466128cf20f68b5c623f00a38ae6e78faf9bf9c3e"
+  },
+  {
+    "old": "diagnostic_summary.json",
+    "new": "CHAN DOAN/diagnostic_summary.json",
+    "sha256_before_edit": "4f5a7893cbab6c3590b4ee0f5d28c018ef35f0afaa9c195770cf7bd75b06e0c2"
+  },
+  {
+    "old": "benchmark_n321_250m_log.txt",
+    "new": "CHAN DOAN/benchmark_n321_250m_log.txt",
+    "sha256_before_edit": "bad3f7c8d335e866bcad29d5f576fdf486680fe00f7c9f1d236aa1c9fb0da4b1"
+  },
+  {
+    "old": "run_log_500k.txt",
+    "new": "CHAN DOAN/run_log_500k.txt",
+    "sha256_before_edit": "ca3555e9f8a8d18a2e2bd6af8f145c522c1a89560449fe91fd6e9f11549cd96d"
+  },
+  {
+    "old": "KET_QUA_KIEM_TRA.txt",
+    "new": "TAI LIEU/KET_QUA_KIEM_TRA.txt",
+    "sha256_before_edit": "db8e86021a96553270d5edfddde29ef9565c61f918dfc4be8524d16f0b14a89d"
+  },
+  {
+    "old": "diagnose_rf_results.json",
+    "new": "CHAN DOAN/diagnose_rf_results.json",
+    "sha256_before_edit": "005628cdd9ffd0fd6ab32936da5fb738755c782559680bf8c3b8f5ed6bf2ced2"
+  }
+]

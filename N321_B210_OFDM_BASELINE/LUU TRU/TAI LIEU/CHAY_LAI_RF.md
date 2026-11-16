@@ -1,3 +1,5 @@
+LƯU Ý SẮP XẾP THƯ MỤC: mã nguồn/flowgraph baseline đã chuyển vào BASELINE GOC; log chẩn đoán cũ ở CHAN DOAN. Các lệnh/đường dẫn trong tài liệu lịch sử bên dưới có thể là vị trí cũ. Xem README.md ngoài cùng để chạy theo cấu trúc mới.
+
 # Thử OFDM qua RF, ngày 14/11/2026
 
 Đã thu đúng payload qua RF, nhưng chưa ổn định: hai lần cùng cấu hình, mỗi lần bật dữ liệu 8 giây, thu lần lượt 253 và 6 gói qua CRC; tất cả gói thu được đều khớp payload 64 byte. Lần hai chưa đạt điều kiện kiểm tra tối thiểu 10 gói. Không suy ra BER/PER từ những số này.

@@ -29,7 +29,7 @@ def main():
     parser.add_argument('--tx-amplitude', type=float, choices=[0.2, 0.5, 0.8],
                         help='Amplitude divided by fft_len to normalize the IFFT before UHD')
     parser.add_argument('--capture-iq', action='store_true', help='Save raw TX/RX IQ for offline diagnosis')
-    parser.add_argument('--output-dir', type=Path, default=ROOT/'rf_validation',
+    parser.add_argument('--output-dir', type=Path, default=ROOT.parent/'rf_validation',
                         help='Directory for reports and IQ captures')
     parser.add_argument('--number-sequence', action='store_true',
                         help='Repeat ASCII numbers 1 through 10 in separate 64-byte packets')

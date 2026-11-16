@@ -1,3 +1,5 @@
+LƯU Ý SẮP XẾP THƯ MỤC: mã nguồn/flowgraph baseline đã chuyển vào BASELINE GOC; log chẩn đoán cũ ở CHAN DOAN. Các lệnh/đường dẫn trong tài liệu lịch sử bên dưới có thể là vị trí cũ. Xem README.md ngoài cùng để chạy theo cấu trúc mới.
+
 ĐÃ XÁC ĐỊNH WIFI ROUTER: MINHDZ. BSSID D4:6E:0E:2E:95:C0 khớp MAC trên nhãn TP-Link. Tên mặc định TP-LINK_95C0 đã được đổi.
 
 KIỂM TRA QUẢN TRỊ N321 KHI WIFI ROUTER KHÔNG CÓ INTERNET

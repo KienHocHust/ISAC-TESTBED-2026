@@ -1,3 +1,5 @@
+LƯU Ý SẮP XẾP THƯ MỤC: mã nguồn/flowgraph baseline đã chuyển vào BASELINE GOC; log chẩn đoán cũ ở CHAN DOAN. Các lệnh/đường dẫn trong tài liệu lịch sử bên dưới có thể là vị trí cũ. Xem README.md ngoài cùng để chạy theo cấu trúc mới.
+
 KẾT QUẢ KIỂM TRA TRỰC TIẾP N321 / B210
 
 Trạng thái: chưa xác nhận truyền thông điệp OFDM thành công.

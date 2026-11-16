@@ -1,0 +1,46 @@
+{
+  "moved_directories": [
+    {
+      "old": "BASELINE GOC",
+      "new": "LUU TRU/BASELINE GOC"
+    },
+    {
+      "old": "CHAN DOAN",
+      "new": "LUU TRU/CHAN DOAN"
+    },
+    {
+      "old": "DATA TEST",
+      "new": "LUU TRU/DATA TEST"
+    },
+    {
+      "old": "TEST GNU THU PHÁT",
+      "new": "LUU TRU/TEST GNU THU PHÁT"
+    },
+    {
+      "old": "TAI LIEU",
+      "new": "LUU TRU/TAI LIEU"
+    },
+    {
+      "old": "rf_validation",
+      "new": "LUU TRU/rf_validation"
+    },
+    {
+      "old": "device_backup",
+      "new": "LUU TRU/device_backup"
+    },
+    {
+      "old": "image_comparison",
+      "new": "LUU TRU/image_comparison"
+    },
+    {
+      "old": "image_trial_review",
+      "new": "LUU TRU/image_trial_review"
+    },
+    {
+      "old": "uhd48_check",
+      "new": "LUU TRU/uhd48_check"
+    }
+  ],
+  "active_folder": "GNU THU PHAT",
+  "active_source_files_unchanged": true
+}

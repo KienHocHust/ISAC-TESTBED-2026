@@ -1,3 +1,5 @@
+LƯU Ý SẮP XẾP THƯ MỤC: mã nguồn/flowgraph baseline đã chuyển vào BASELINE GOC; log chẩn đoán cũ ở CHAN DOAN. Các lệnh/đường dẫn trong tài liệu lịch sử bên dưới có thể là vị trí cũ. Xem README.md ngoài cùng để chạy theo cấu trúc mới.
+
 # N321 phát → B210 thu: xác nhận thông điệp trước khi thêm nhiễu
 
 Tất cả file mới nằm trong thư mục `N321_B210_OFDM_BASELINE`; các file gốc được giữ nguyên.

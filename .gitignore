@@ -1,0 +1,27 @@
+# Local application settings and credentials
+.agents/
+.aws/
+.codex/
+.env
+.env.*
+!.env.example
+*.lic
+*.pem
+*.key
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Downloaded installers and duplicate archives
+/Xilinx_Unified_2021.1_0610_2318/
+/AR76780_Vivado_2021_1_preliminary_rev1/
+/*.zip
+/*.deb
+/cmake-*-linux-*.sh
+
+# Desktop metadata
+.DS_Store
+Thumbs.db

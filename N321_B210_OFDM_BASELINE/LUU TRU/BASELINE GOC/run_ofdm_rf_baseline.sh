@@ -3,7 +3,7 @@
 set -u
 set -o pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")" || exit 1
-run_dir="rf_validation/manual_$(date +%Y%m%d_%H%M%S)_$$"
+run_dir="../rf_validation/manual_$(date +%Y%m%d_%H%M%S)_$$"
 mkdir -p -- "$run_dir" || exit 1
 printf 'Reports and log: %s/%s\n' "$PWD" "$run_dir"
 /usr/bin/python3 -u validate_ofdm_rf.py \
